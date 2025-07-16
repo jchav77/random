@@ -1,292 +1,117 @@
-# Strategic RIE Reduction Roadmap
-## Optimized for Current Data Assets
+### How to zero-in on the Tier-5 / Lien-Title problem
 
-**Executive Summary:** Transform existing RIE data into actionable insights using proven analytics techniques to target controllable violations and improve operational accountability.
-
----
-
-## Current Data Asset Analysis
-
-**Available Data Fields:**
-- Account number, return reason, other return reason
-- Date of repossession, date of violation, violation type
-- Controllable/uncontrollable flag
-- Vehicle return status and timeline
-- Comments, manager, hub leader, reason of return
-
-**Strategic Advantage:** Rich operational data allows precise targeting of controllable issues and accountability by manager/hub.
+*(Comprehensive plan – written in plain, “just-tell-me-what-to-do” language)*
 
 ---
 
-## Phase 1: Immediate Intelligence (Weeks 1-4)
+## 1. Why Tier-5 deserves the spotlight (30-second refresher)
 
-### 1A. Data-Driven Prioritization (Week 1)
-**Analysis Focus:** Leverage existing monthly reports for strategic insights
+| Tier path   | Days past due | Time spent in tier | What happens                              |
+| ----------- | ------------- | ------------------ | ----------------------------------------- |
+| **Tier 1**  | 75-DPD start  | 22 days            | Early collection calls                    |
+| **Tier 2**  | next 60 days  | 60 days            | Escalated outreach                        |
+| **Tier 3**  | next 60 days  | 60 days            | Legal letters begin                       |
+| **Tier 4**  | next 60 days  | 60 days            | Repossession prep                         |
+| **Tier 5**  | next 60 days  | 60 days            | Collateral assigned, title work triggered |
+| **Dormant** | +90 days wait | 90 days            | Loan “rests,” then cycles back to Tier 1  |
 
-**Key Analytics:**
-- **Controllable RIE Analysis:** % of total RIEs marked as controllable by return reason
-- **Hub Performance Matrix:** RIE rate and cost by hub leader
-- **Manager Accountability View:** Controllable RIE rate by manager
-- **Return Reason Pareto:** Top 5 return reasons representing 80% of volume
-- **Time-to-Resolution Analysis:** Average days from violation to vehicle return by reason
-
-**Deliverable:** Executive brief showing highest-impact opportunities
-
-### 1B. Controllable vs. Uncontrollable Deep Dive (Week 2)
-**Strategic Focus:** Maximize ROI by targeting only controllable violations
-
-**Analysis Questions:**
-- Which return reasons are predominantly controllable?
-- Which managers/hubs have highest controllable RIE rates?
-- What's the cost difference between controllable and uncontrollable RIEs?
-- Are there patterns in comments for controllable violations?
-
-**Output:** Controllable RIE reduction targets by hub and manager
-
-### 1C. Performance Baseline by Hub/Manager (Week 3)
-**Approach:** Create accountability framework using existing org structure
-
-**Metrics Creation:**
-- Hub-level RIE rate (total and controllable only)
-- Manager-level controllable RIE rate
-- Time-to-resolution performance by hub
-- Vehicle return rate by manager
-
-**Deliverable:** Performance dashboard showing clear accountability
-
-### 1D. Quick Win Identification (Week 4)
-**Strategy:** Target highest-frequency, most-controllable return reasons
-
-**Analysis:**
-- Top 3 controllable return reasons by frequency
-- Managers with outlier performance (both good and bad)
-- Comments analysis for common preventable errors
-- Hub-level patterns in controllable violations
+**Why we care:**
+Lien/Title errors almost always surface **while a loan sits in Tier 5** (title search & repo paperwork). The longer or more often a loan stays there, the higher the risk.
 
 ---
 
-## Phase 2: Targeted Interventions (Weeks 4-10)
+## 2. Data you need (quick checklist)
 
-### 2A. Return Reason-Specific Playbooks (Weeks 4-6)
-**Focus:** Top 2-3 controllable return reasons only
+1. **Loan & repo facts**
 
-**If "Misapplied Payment" is top controllable reason:**
-- Create pre-repo payment verification checklist
-- Implement manager sign-off for accounts with recent payments
-- Add payment timing validation rules
+   * Loan ID, Origination date, State / county
+   * Repo date, Repo amount (\$)
+   * RIE flag (Y/N) and RIE type
+2. **Tier timeline** – one row per tier change
 
-**If "Lien/Title" issues are controllable:**
-- Mandate title status check within 24 hours of assignment
-- Create hub-specific title validation procedures
-- Implement supervisor review for complex title situations
+   * Loan ID, Tier number, Tier entry date, Tier exit date
+   * You can derive if raw dates aren’t logged (use DPD + your “22/60/60” rules).
+3. **QC timestamps** (if available)
 
-**Cost:** Minimal - process documentation and training
-
-### 2B. Manager Performance Program (Weeks 6-8)
-**Strategy:** Leverage existing management structure
-
-**Implementation:**
-- Monthly manager scorecards showing controllable RIE rate
-- Best practice sharing from top-performing managers
-- Targeted coaching for managers with high controllable rates
-- Recognition program for consistent improvement
-
-### 2C. Hub-Level Accountability (Weeks 8-10)
-**Approach:** Create healthy competition and knowledge sharing
-
-**Actions:**
-- Monthly hub leader meetings with RIE performance review
-- Hub-specific improvement targets based on baseline
-- Cross-hub best practice sharing sessions
-- Hub performance rankings (internal use)
+   * Title request date, Title received date, QC approval date.
 
 ---
 
-## Phase 3: Systematic Prevention (Weeks 8-16)
+## 3. Simple analysis game-plan (step by step)
 
-### 3A. Predictive Indicators (Weeks 8-10)
-**Using Available Data:** Identify early warning signs
+### Step A – Build “days-in-Tier-5” features
 
-**Pattern Analysis:**
-- Time gaps between repo date and violation date
-- Account characteristics associated with specific return reasons
-- Manager workload correlation with controllable RIE rates
-- Hub seasonal patterns in violation types
+```text
+days_in_t5_before_repo   =  date_repo – tier5_entry_date
+cycles_in_t5             =  floor(days_in_t5_before_repo / 60)
+```
 
-**Output:** Risk scoring based on account and operational factors
+### Step B – Bucket loans for an apples-to-apples view
 
-### 3B. Process Standardization (Weeks 10-12)
-**Focus:** Controllable violations only
+| Bucket name     | Logic                             | Example                               |
+| --------------- | --------------------------------- | ------------------------------------- |
+| **No T5**       | Loan never reached Tier 5         | cycles\_in\_t5 = 0 & days\_in\_t5 = 0 |
+| **Early T5**    | In Tier 5 < 30 days               | 0 < days\_in\_t5 ≤ 30                 |
+| **Full Cycle**  | 30 < days ≤ 60                    |                                       |
+| **Multi-Cycle** | days > 60 *or* cycles\_in\_t5 ≥ 1 |                                       |
 
-**Standardization Areas:**
-- Pre-repo verification checklists by return reason type
-- Manager review triggers for high-risk scenarios
-- Hub-specific escalation procedures
-- Documentation requirements for edge cases
+### Step C – Measure the hit rate
 
-### 3C. Real-Time Monitoring (Weeks 12-14)
-**Leverage:** Existing reporting infrastructure
+For each bucket calculate:
 
-**Monitoring Alerts:**
-- Manager exceeds controllable RIE threshold
-- Hub performance trending downward
-- Unusual spike in specific return reasons
-- Extended time-to-resolution alerts
+```text
+LienTitle_RIE_%  =  (# Lien/Title RIE)  ÷  (# repos in bucket)
+```
 
-### 3D. Continuous Improvement Loop (Weeks 14-16)
-**Strategy:** Embed learning into operations
+Plot as a simple **clustered bar**: buckets on X, error % on Y.
 
-**Framework:**
-- Monthly controllable RIE case reviews by hub
-- Quarterly manager performance calibration
-- Semi-annual process optimization based on data trends
-- Annual accountability framework updates
+### Step D – Quick statistical test
+
+* Run a **chi-square test** on the 4 × 2 table (bucket vs. RIE yes/no).
+* If p < 0.05 and the “Multi-Cycle” bucket has 2-3× the error rate, Tier-5 exposure is officially a culprit.
+
+*(No fancy ML needed—though a logistic regression with `days_in_t5` as a predictor will give the same answer.)*
 
 ---
 
-## Cost-Benefit Analysis
+## 4. Turning insight into action (“pilot first, scale later”)
 
-### Investment Required:
-- Data analysis and reporting enhancement: $25K
-- Process documentation and training: $15K
-- Performance management system updates: $10K
-- **Total Investment: $50K**
-
-### Expected Returns:
-- **Target:** 45% reduction in controllable RIEs (60% of total RIE volume)
-- **Financial Impact:** 27% total RIE cost reduction
-- **Operational Impact:** Improved manager accountability and performance
-
-### ROI Calculation:
-- Assume current controllable RIE cost: $500K annually
-- 45% reduction = $225K annual savings
-- **ROI: 450% in year one**
+| Pain-point uncovered                       | 2-week pilot fix                                                              | Metric to watch                                  |
+| ------------------------------------------ | ----------------------------------------------------------------------------- | ------------------------------------------------ |
+| Multi-Cycle loans show 3× more L/T errors  | **Auto-escalate at day-45 of Tier 5**: senior analyst re-reviews title packet | L/T RIE % for >60-day loans should fall ≥ 0.5 pp |
+| Early T5 loans (0-30 days) have few errors | **Fast-track repos**: skip dormant 90-day wait if all QC green                | Days-to-repo drops without L/T spike             |
+| QC timestamps show wide variance           | **Trigger reminder email** at 10 days if title doc not yet in                 | Median “request→receipt” time shrinks            |
 
 ---
 
-## 90-Day Milestone Targets
+## 5. Keeping it simple to monitor
 
-**Month 1:**
-- Complete data analysis and hub/manager baselines
-- Identify top 3 controllable return reasons
-- Launch manager performance scorecards
+1. **Weekly Tier-5 dashboard**:
 
-**Month 2:**
-- Implement playbooks for top 2 return reasons
-- Begin manager coaching program
-- Establish hub performance meetings
+   * Bar chart: L/T RIE % by bucket (No T5, Early, Full, Multi)
+   * Line chart: rolling 4-week L/T RIE % overall
+2. **Traffic-light KPI** on your Yammer/Teams channel:
 
-**Month 3:**
-- 25% reduction in controllable RIEs achieved
-- Process standardization deployed
-- Real-time monitoring active
+   * Green ≤ 25 %, Yellow 25–30 %, Red > 30 %.
 
 ---
 
-## Success Metrics (Monthly Tracking)
+## 6. Timeline recap (at-a-glance)
 
-**Primary KPIs:**
-- Controllable RIE rate by hub and manager
-- Top 3 controllable return reasons trend
-- Time-to-resolution by violation type
-- Vehicle return rate improvement
-
-**Secondary KPIs:**
-- Manager performance distribution
-- Hub ranking consistency
-- Process compliance rates
-- Cost per controllable RIE
+| Week    | Deliverable                                                         |
+| ------- | ------------------------------------------------------------------- |
+| **1**   | Pull raw data; replicate mentor’s 3 key visuals for sign-off        |
+| **2**   | Build Tier timeline; produce bucketed error-rate bar chart          |
+| **3**   | Present findings; agree on pilot scope (e.g., day-45 senior review) |
+| **4–5** | Run pilot; track weekly dashboard                                   |
+| **6**   | Decide: scale, tweak, or scrap the pilot; document SOP changes      |
 
 ---
 
-## Accountability Framework
+### End-result
 
-### Hub Leader Accountability:
-- Monthly controllable RIE rate target
-- Quarterly improvement trajectory
-- Best practice sharing leadership
+You’ll be able to walk into your next check-in and say:
 
-### Manager Accountability:
-- Individual controllable RIE rate targets
-- Monthly coaching participation
-- Process compliance verification
+> “We proved loans sitting in Tier 5 > 60 days carry a **31 %** Lien/Title error rate—**2.8×** the normal rate. After we added a day-45 senior QC last week, that bucket’s error rate fell to **24 %**. Let’s roll the QC step out to all Tier-5 loans immediately and revisit in 30 days.”
 
-### Analytics Team Accountability:
-- Monthly data quality and insights
-- Quarterly model performance review
-- Annual framework optimization
-
----
-
-## Implementation Roadmap
-
-### Week 1-2: Data Foundation
-- Analyze 12 months of existing RIE data
-- Create hub and manager performance baselines
-- Identify controllable vs. uncontrollable patterns
-
-### Week 3-4: Quick Wins Setup
-- Develop manager scorecards
-- Create hub performance dashboard
-- Launch accountability meetings
-
-### Week 5-8: Targeted Interventions
-- Deploy return reason-specific playbooks
-- Begin manager performance program
-- Implement process standardizations
-
-### Week 9-12: Systematic Prevention
-- Launch predictive indicators
-- Implement real-time monitoring
-- Establish continuous improvement loop
-
-### Week 13-16: Optimization
-- Refine processes based on initial results
-- Expand successful interventions
-- Prepare for scale and sustainability
-
----
-
-## Risk Mitigation
-
-**Risk:** Manager resistance to accountability
-**Mitigation:** Focus on coaching and support, not punishment
-
-**Risk:** Hub competition becomes counterproductive
-**Mitigation:** Emphasize collaboration and best practice sharing
-
-**Risk:** Data quality issues with comments field
-**Mitigation:** Structured comment templates and validation
-
-**Risk:** Focusing only on controllable RIEs misses opportunities
-**Mitigation:** Quarterly review of uncontrollable patterns for systemic issues
-
----
-
-## Next Steps
-
-**Week 1 Actions:**
-1. Extract 12 months of RIE data for comprehensive analysis
-2. Schedule stakeholder alignment meeting with operations leadership
-3. Begin controllable RIE deep dive analysis
-4. Identify top 3 hub leaders and managers for early engagement
-
-**Resource Requirements:**
-- 1 senior analyst (75% for 8 weeks, then 25% ongoing)
-- Operations manager liaison (25% for 12 weeks)
-- Hub leader participation (2 hours monthly)
-
-**Success Indicators:**
-- Clear accountability established within 30 days
-- First controllable RIE reduction visible within 60 days
-- Sustainable improvement processes embedded within 90 days
-
----
-
-## Strategic Value Proposition
-
-**For Operations:** Clear accountability and performance improvement tools
-**For Analytics:** Demonstrates practical business impact using existing data
-**For Leadership:** Fast ROI with minimal investment and maximum operational benefit
-
-This approach transforms existing data into a strategic advantage while building sustainable improvement capabilities within current organizational structure.
+That’s the kind of story—and action plan—your mentor is after.
