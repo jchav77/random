@@ -1,0 +1,1988 @@
+# Reusable AI Prompts for Analytics & Strategy Work
+
+## 📖 Purpose
+
+This document contains **30 expert-crafted AI prompts** for common analytics and strategy tasks. These prompts are designed to be copied, customized with your specific context, and used immediately.
+
+**How to Use:**
+1. Find the category that matches your current need
+2. Copy the prompt template
+3. Replace the bracketed placeholders [like this] with your specifics
+4. Paste into your AI assistant (Claude, ChatGPT, etc.)
+5. Iterate based on the response
+
+**Pro Tip:** The more specific context you provide in the brackets, the better the AI's response will be.
+
+---
+
+## Table of Contents
+
+### Strategic Planning & Problem Solving
+1. [Problem Framing & Definition](#1-problem-framing)
+2. [Assumption Testing & Validation](#2-assumption-testing)
+3. [Stakeholder Mapping & Analysis](#3-stakeholder-mapping)
+4. [Options Generation & Evaluation](#4-options-generation)
+5. [Decision Framework Development](#5-decision-framework)
+6. [Risk Identification & Assessment](#6-risk-identification)
+
+### Analytics & Data Work
+7. [Metrics Definition & Selection](#7-metrics-definition)
+8. [Data Analysis Planning](#8-data-analysis-planning)
+9. [Root Cause Analysis](#9-root-cause-analysis)
+10. [Segmentation Strategy](#10-segmentation-strategy)
+11. [Data Quality Assessment](#11-data-quality-assessment)
+12. [Statistical Testing Approach](#12-statistical-testing)
+
+### Business Analysis
+13. [Cost-Benefit Analysis Framework](#13-cost-benefit-analysis)
+14. [Process Improvement Identification](#14-process-improvement)
+15. [Vendor/Partner Evaluation](#15-vendor-evaluation)
+16. [Gap Analysis](#16-gap-analysis)
+17. [Benchmarking & Best Practices](#17-benchmarking)
+18. [Forecasting Methodology](#18-forecasting)
+
+### Communication & Presentations
+19. [Executive Summary Writing](#19-executive-summary)
+20. [Presentation Structure Design](#20-presentation-structure)
+21. [Data Storytelling](#21-data-storytelling)
+22. [Recommendation Development](#22-recommendation-development)
+23. [Meeting Agenda & Prep](#23-meeting-prep)
+24. [Email Communication](#24-email-communication)
+
+### Project Management
+25. [Project Scoping & Planning](#25-project-scoping)
+26. [Quality Assurance Checklist](#26-quality-assurance)
+27. [Documentation Improvement](#27-documentation)
+28. [Prioritization Framework](#28-prioritization)
+29. [Change Management Planning](#29-change-management)
+30. [Lessons Learned Facilitation](#30-lessons-learned)
+
+---
+
+# Strategic Planning & Problem Solving
+
+## 1. Problem Framing & Definition {#1-problem-framing}
+
+**Use When:** Starting a new analysis project or clarifying a vague request
+
+**Prompt Template:**
+```
+I need help framing a business problem clearly. Here's the situation:
+
+CONTEXT:
+- Business area: [e.g., Auto finance operations, vendor management, collections]
+- Current situation: [Describe what's happening now]
+- Why it matters: [Business impact or pain point]
+- Who's asking: [Stakeholder role and their concern]
+
+INITIAL REQUEST:
+"[Paste the original request or question as stated]"
+
+Please help me:
+1. Reframe this as a clear, answerable business question
+2. Identify what decision this analysis should inform
+3. Clarify any ambiguous terms or concepts
+4. Suggest what "good" looks like (success criteria)
+5. Identify what's IN scope vs OUT of scope
+6. Flag any assumptions I should validate before proceeding
+
+Format your response as a structured problem statement that I can use in a project charter.
+```
+
+**Example Usage:**
+```
+CONTEXT:
+- Business area: Auto finance repossession operations
+- Current situation: Recovery rates have declined 8% over past 6 months
+- Why it matters: Impacts profitability by approximately $2-3M annually
+- Who's asking: VP of Operations wants to understand what's driving the decline
+
+INITIAL REQUEST:
+"Can you look into our recovery rate issues?"
+
+[AI will provide structured problem framing]
+```
+
+---
+
+## 2. Assumption Testing & Validation {#2-assumption-testing}
+
+**Use When:** You've made assumptions in your analysis that need validation
+
+**Prompt Template:**
+```
+I'm working on an analysis and have made several assumptions that I need to validate. Please help me rigorously test these assumptions.
+
+ANALYSIS CONTEXT:
+[Brief description of what you're analyzing]
+
+MY ASSUMPTIONS:
+1. [Assumption 1]
+2. [Assumption 2]
+3. [Assumption 3]
+[Add more as needed]
+
+For each assumption, please:
+1. Assess the risk level (HIGH/MEDIUM/LOW) if the assumption is wrong
+2. Suggest specific ways to validate or test this assumption
+3. Identify data or evidence I should look for
+4. Recommend what to do if the assumption proves incorrect
+5. Flag any hidden assumptions I might be missing
+
+Also identify any assumptions that seem particularly risky or unfounded.
+```
+
+**Example Usage:**
+```
+ANALYSIS CONTEXT:
+Evaluating whether to shift from quarterly to monthly vendor reviews
+
+MY ASSUMPTIONS:
+1. More frequent reviews lead to better vendor performance
+2. Our team has capacity to conduct monthly reviews
+3. Vendors can respond to feedback within monthly cycles
+4. The benefit of monthly reviews outweighs the administrative cost
+
+[AI will provide rigorous testing framework]
+```
+
+---
+
+## 3. Stakeholder Mapping & Analysis {#3-stakeholder-mapping}
+
+**Use When:** Starting a new project or navigating organizational dynamics
+
+**Prompt Template:**
+```
+I need to map stakeholders for a project and understand their interests, influence, and potential concerns.
+
+PROJECT:
+[Brief description of the project or analysis]
+
+STAKEHOLDERS I'VE IDENTIFIED:
+- [Stakeholder 1]: [Their role]
+- [Stakeholder 2]: [Their role]
+- [Stakeholder 3]: [Their role]
+[Add more as needed]
+
+For each stakeholder, please help me identify:
+1. Their likely interests and priorities
+2. Their level of influence (high/medium/low)
+3. Their level of interest in this project (high/medium/low)
+4. Potential concerns or objections they might have
+5. How they prefer to receive information (detail level, format)
+6. How best to engage them (frequency, communication style)
+
+Also suggest:
+- Any stakeholders I might be missing
+- How to prioritize my engagement efforts
+- Potential coalition-building opportunities
+- Early warnings signs of stakeholder resistance
+
+Create a stakeholder matrix (Influence vs Interest) and recommend an engagement strategy for each quadrant.
+```
+
+---
+
+## 4. Options Generation & Evaluation {#4-options-generation}
+
+**Use When:** You need to develop and compare multiple solution approaches
+
+**Prompt Template:**
+```
+I need to generate and evaluate multiple options to address a business challenge.
+
+BUSINESS CHALLENGE:
+[Describe the problem or opportunity]
+
+CONSTRAINTS:
+- Budget: [Any budget limitations]
+- Timeline: [Time constraints]
+- Resources: [Team, systems, data availability]
+- Other: [Any other constraints]
+
+SUCCESS CRITERIA:
+[What defines a good solution?]
+
+Please help me:
+1. Generate 5-7 distinct options to address this challenge (think creatively, including both incremental and transformational approaches)
+2. For each option, provide:
+   - Brief description
+   - Key advantages
+   - Key disadvantages
+   - Rough effort estimate (Low/Medium/High)
+   - Rough impact estimate (Low/Medium/High)
+   - Key risks
+   - Quick-win potential
+3. Create a comparison matrix with the options
+4. Recommend which 2-3 options to analyze in more detail
+5. Suggest criteria for final selection
+
+Format as a decision-support document I can present to stakeholders.
+```
+
+---
+
+## 5. Decision Framework Development {#5-decision-framework}
+
+**Use When:** Building a systematic approach to make recurring decisions
+
+**Prompt Template:**
+```
+I need to develop a decision framework for a recurring business decision.
+
+DECISION TYPE:
+[What decision needs to be made repeatedly?]
+
+CONTEXT:
+- Frequency: [How often is this decision made?]
+- Decision maker: [Who makes the final call?]
+- Impact: [What's at stake?]
+- Current process: [How is it done today, if at all?]
+
+FACTORS TO CONSIDER:
+[List the factors that should influence the decision]
+
+Please develop a decision framework that includes:
+1. Clear decision criteria with relative weights
+2. Scoring methodology (quantitative where possible)
+3. Threshold rules (e.g., "If X > Y, then choose option A")
+4. Tie-breaker rules
+5. Red flags or veto conditions
+6. Process flowchart showing decision steps
+7. Documentation requirements
+8. Escalation triggers (when to elevate to higher authority)
+
+Make this practical and usable by others on my team.
+```
+
+**Example Usage:**
+```
+DECISION TYPE:
+Which vendor to allocate repossession cases to
+
+CONTEXT:
+- Frequency: Daily allocation decisions
+- Decision maker: Operations team lead
+- Impact: Affects recovery rates and costs
+- Current process: Mostly based on capacity, some judgment
+
+FACTORS TO CONSIDER:
+- Vendor recovery rate performance
+- Current capacity/workload
+- Geographic coverage
+- Cost per case
+- Response time
+- Compliance history
+
+[AI will create structured decision framework]
+```
+
+---
+
+## 6. Risk Identification & Assessment {#6-risk-identification}
+
+**Use When:** Evaluating risks in a project, process, or decision
+
+**Prompt Template:**
+```
+I need to conduct a comprehensive risk assessment for a project/initiative.
+
+PROJECT/INITIATIVE:
+[Describe what you're evaluating]
+
+SCOPE:
+[What's included in this assessment?]
+
+Please help me identify and assess risks across these categories:
+
+1. **Operational Risks**: Process failures, execution challenges
+2. **Data/Quality Risks**: Data availability, accuracy, completeness
+3. **Timeline Risks**: Delays, dependencies, resource constraints
+4. **Stakeholder Risks**: Resistance, misalignment, competing priorities
+5. **Financial Risks**: Cost overruns, ROI concerns
+6. **Compliance/Regulatory Risks**: Policy violations, audit findings
+7. **Technology/System Risks**: System failures, integration issues
+8. **Reputational Risks**: Perception, customer impact
+
+For each risk identified, provide:
+- Description of the risk
+- Likelihood (High/Medium/Low)
+- Impact if it occurs (High/Medium/Low)
+- Risk score (Likelihood × Impact)
+- Early warning indicators
+- Mitigation strategies
+- Contingency plans (what to do if it happens)
+- Owner (who should monitor this risk)
+
+Create a risk matrix and prioritize the top 5 risks requiring immediate attention.
+```
+
+---
+
+# Analytics & Data Work
+
+## 7. Metrics Definition & Selection {#7-metrics-definition}
+
+**Use When:** Defining KPIs or selecting metrics for an analysis
+
+**Prompt Template:**
+```
+I need help defining and selecting the right metrics for an analysis.
+
+BUSINESS OBJECTIVE:
+[What are we trying to measure or optimize?]
+
+CONTEXT:
+- Business process: [What process or operation is being measured?]
+- Decision to inform: [How will these metrics be used?]
+- Audience: [Who will use these metrics?]
+- Frequency: [How often measured?]
+
+CANDIDATE METRICS:
+[List any metrics you're considering, or ask AI to suggest]
+
+For each metric, please provide:
+1. **Clear definition**: Business definition in plain English
+2. **Technical definition**: Exact calculation formula
+3. **Why it matters**: Business interpretation and use
+4. **Data source**: Where to get the data
+5. **Calculation frequency**: How often can/should it be calculated
+6. **Expected range**: What's a normal/good/bad value?
+7. **Limitations**: What this metric doesn't tell you
+8. **Related metrics**: Other metrics that provide context
+9. **Leading vs lagging**: Is this predictive or historical?
+
+Also help me:
+- Identify any redundant metrics
+- Ensure metrics are SMART (Specific, Measurable, Achievable, Relevant, Time-bound)
+- Create a balanced scorecard if multiple metrics
+- Suggest a primary metric and supporting metrics
+```
+
+**Example Usage:**
+```
+BUSINESS OBJECTIVE:
+Evaluate and improve our repossession vendor performance
+
+CONTEXT:
+- Business process: Vehicle repossession and liquidation
+- Decision to inform: Vendor allocation and contract renewals
+- Audience: Operations VP and vendor management team
+- Frequency: Monthly reporting
+
+CANDIDATE METRICS:
+- Recovery rate
+- Time to liquidation
+- Cost per case
+- Compliance score
+- Customer complaint rate
+
+[AI will provide comprehensive metric definitions]
+```
+
+---
+
+## 8. Data Analysis Planning {#8-data-analysis-planning}
+
+**Use When:** Planning the analytical approach for a new project
+
+**Prompt Template:**
+```
+I need to develop a comprehensive data analysis plan.
+
+BUSINESS QUESTION:
+[What question are you trying to answer?]
+
+AVAILABLE DATA:
+- Source 1: [Description, time period, granularity]
+- Source 2: [Description, time period, granularity]
+- Source 3: [Description, time period, granularity]
+
+CONSTRAINTS:
+- Timeline: [How much time do you have?]
+- Tools: [What tools are available - Excel, Python, SQL, etc.?]
+- Data access: [Any limitations?]
+
+Please develop an analysis plan that includes:
+
+1. **Analysis approach**: What analytical methods to use and why
+2. **Data preparation steps**: 
+   - How to clean and prepare each source
+   - How to join/merge multiple sources
+   - What transformations are needed
+3. **Key analyses to perform**:
+   - Descriptive statistics
+   - Segmentation approaches
+   - Trend analysis
+   - Comparative analysis
+   - Root cause investigation
+4. **Validation checks**: How to ensure accuracy
+5. **Potential pitfalls**: What could go wrong
+6. **Alternative approaches**: If primary approach doesn't work
+7. **Sequencing**: What order to do these analyses
+8. **Time estimates**: How long each step should take
+
+Also suggest what quick exploratory analysis I should do first to validate the approach.
+```
+
+---
+
+## 9. Root Cause Analysis {#9-root-cause-analysis}
+
+**Use When:** Investigating why a problem is occurring
+
+**Prompt Template:**
+```
+I need to conduct a root cause analysis to understand why a problem is occurring.
+
+PROBLEM STATEMENT:
+[Describe the problem clearly]
+
+SYMPTOMS/EVIDENCE:
+- [Symptom 1 and supporting data]
+- [Symptom 2 and supporting data]
+- [Symptom 3 and supporting data]
+
+CONTEXT:
+- When did this start? [Timing]
+- What changed around that time? [Known changes]
+- Who/what is affected? [Scope]
+- How big is the impact? [Magnitude]
+
+Help me conduct a systematic root cause analysis:
+
+1. **Use 5 Whys technique**: Ask "why" repeatedly to get to root cause
+2. **Apply fishbone/Ishikawa analysis**: Categorize potential causes:
+   - People (staffing, training, capability)
+   - Process (workflows, procedures, controls)
+   - Technology (systems, data, tools)
+   - External factors (market, regulations, vendors)
+   - Policy (rules, guidelines, standards)
+3. **Identify correlation vs causation**: What's correlated vs what's actually causal?
+4. **Develop hypotheses**: Testable hypotheses for each potential root cause
+5. **Suggest tests**: How to validate each hypothesis with data
+6. **Consider multiple causes**: Could this be multifactorial?
+7. **Quick wins**: What could be tested/fixed quickly?
+
+Prioritize the most likely root causes and suggest a validation plan.
+```
+
+**Example Usage:**
+```
+PROBLEM STATEMENT:
+Recovery rates have declined 8% over the past 6 months
+
+SYMPTOMS/EVIDENCE:
+- Recovery rate dropped from 75% to 67%
+- Decline consistent across all regions
+- Time-to-liquidation increased by 12 days
+- Vehicle sale prices decreased 5%
+
+CONTEXT:
+- Started in March 2024
+- New vendor onboarded in February
+- Loan balances have increased 10%
+- Used car market has softened
+
+[AI will conduct systematic root cause analysis]
+```
+
+---
+
+## 10. Segmentation Strategy {#10-segmentation-strategy}
+
+**Use When:** Deciding how to segment data for analysis
+
+**Prompt Template:**
+```
+I need to develop a segmentation strategy for an analysis.
+
+ANALYSIS PURPOSE:
+[What are you trying to learn or optimize?]
+
+POPULATION:
+[What are you segmenting? Customers, vendors, accounts, products, etc.]
+
+AVAILABLE ATTRIBUTES:
+[List the attributes/variables available for segmentation]
+
+BUSINESS CONTEXT:
+[Any known patterns, existing segments, or business rules?]
+
+Please help me:
+
+1. **Suggest segmentation approaches**:
+   - Rule-based segmentation (based on business logic)
+   - Statistical segmentation (clustering, decision trees)
+   - Behavioral segmentation
+   - Value-based segmentation
+   
+2. **Recommend specific segments** based on:
+   - Business actionability (can we do something different for each segment?)
+   - Statistical significance (meaningful differences between segments)
+   - Segment size (large enough to matter, small enough to be distinct)
+   - Stability (will these segments persist over time?)
+
+3. **For each proposed segmentation**:
+   - Segment definitions
+   - Expected size of each segment
+   - Key characteristics of each segment
+   - Hypothesized differences in behavior/outcomes
+   - Recommended actions per segment
+   - How to validate the segmentation is useful
+
+4. **Suggest:**
+   - Which segmentation to start with (simplest vs most insightful)
+   - How to test if segmentation adds value
+   - How to refine segments based on results
+
+Provide both a simple (2-3 segments) and sophisticated (5-7 segments) approach.
+```
+
+---
+
+## 11. Data Quality Assessment {#11-data-quality-assessment}
+
+**Use When:** Evaluating data quality before or during analysis
+
+**Prompt Template:**
+```
+I need to assess the quality of a dataset before using it for analysis.
+
+DATA SOURCE:
+[Name/description of the data source]
+
+PURPOSE:
+[How will this data be used?]
+
+CONTEXT:
+- Record count: [Approximate number of records]
+- Key fields: [List the important fields]
+- Time period: [Date range covered]
+- Refresh frequency: [How often updated]
+
+Please help me design a data quality assessment plan:
+
+1. **Completeness checks**:
+   - Which fields should never be null?
+   - What % of nulls is acceptable for each field?
+   - Are there missing time periods or gaps?
+   - SQL queries to check completeness
+
+2. **Accuracy checks**:
+   - How to validate data against known values?
+   - What calculations should be verified?
+   - What are reasonable ranges for each metric?
+   - Sample validation queries
+
+3. **Consistency checks**:
+   - What relationships should hold between fields?
+   - How to check for logical inconsistencies?
+   - What cross-field validations to perform?
+   - Expected totals or aggregations
+
+4. **Timeliness checks**:
+   - How to verify data freshness?
+   - What's the expected lag?
+   - How to detect stale data?
+
+5. **Uniqueness checks**:
+   - What should be unique (primary keys)?
+   - How to detect and handle duplicates?
+   - Deduplication strategy if needed
+
+6. **Create a data quality scorecard**:
+   - Metrics to track quality dimensions
+   - Thresholds for acceptable quality
+   - Red flags requiring investigation
+
+Provide specific SQL queries or validation logic I can use.
+```
+
+---
+
+## 12. Statistical Testing Approach {#12-statistical-testing}
+
+**Use When:** Determining what statistical tests to use
+
+**Prompt Template:**
+```
+I need help determining the right statistical approach for my analysis.
+
+RESEARCH QUESTION:
+[What are you trying to test or prove?]
+
+DATA CHARACTERISTICS:
+- Sample size: [How many observations?]
+- Data type: [Continuous, categorical, binary, etc.]
+- Distribution: [Normal, skewed, unknown]
+- Number of groups: [Comparing how many groups?]
+- Relationship: [Independent samples, paired, time series]
+
+WHAT I WANT TO KNOW:
+[e.g., Is there a significant difference? Is there a relationship? Can we predict X from Y?]
+
+Please recommend:
+
+1. **Appropriate statistical test(s)**:
+   - Primary test to use
+   - Why this test is appropriate
+   - Assumptions that must be met
+   - How to check if assumptions are satisfied
+
+2. **Alternative tests**:
+   - If assumptions aren't met, what's the alternative (non-parametric)?
+   - If sample size is small, what's appropriate?
+
+3. **Hypothesis setup**:
+   - Null hypothesis (H0)
+   - Alternative hypothesis (H1)
+   - Significance level (α) to use
+   - One-tailed vs two-tailed test
+
+4. **Power analysis**:
+   - Is my sample size large enough?
+   - What effect size could I detect?
+   - What's the risk of Type I and Type II errors?
+
+5. **Practical implementation**:
+   - Step-by-step process
+   - How to interpret results
+   - What to report
+   - Cautions about interpretation
+
+Include example code (Python/R) or Excel formulas if possible.
+```
+
+**Example Usage:**
+```
+RESEARCH QUESTION:
+Is there a significant difference in recovery rates between Vendor A and Vendor B?
+
+DATA CHARACTERISTICS:
+- Sample size: Vendor A = 1,200 cases, Vendor B = 980 cases
+- Data type: Recovery rate (continuous, 0-100%)
+- Distribution: Slightly right-skewed
+- Number of groups: 2 (Vendor A vs Vendor B)
+- Relationship: Independent samples
+
+WHAT I WANT TO KNOW:
+Is the difference in mean recovery rates statistically significant? If yes, by how much?
+
+[AI will recommend appropriate statistical approach]
+```
+
+---
+
+# Business Analysis
+
+## 13. Cost-Benefit Analysis Framework {#13-cost-benefit-analysis}
+
+**Use When:** Evaluating whether to pursue an initiative or investment
+
+**Prompt Template:**
+```
+I need to conduct a cost-benefit analysis for a proposed initiative.
+
+INITIATIVE:
+[Describe the proposed initiative or investment]
+
+CONTEXT:
+- Timeline: [Implementation period and evaluation period]
+- Stakeholders: [Who's affected]
+- Current state: [What happens if we do nothing?]
+
+Help me build a comprehensive cost-benefit analysis:
+
+1. **Identify all costs**:
+   - One-time costs (implementation, setup, training)
+   - Ongoing costs (operational, maintenance, support)
+   - Opportunity costs (what we won't do if we do this)
+   - Hidden costs often overlooked
+   - Rough estimates for each
+
+2. **Identify all benefits**:
+   - Quantifiable benefits (cost savings, revenue increase)
+   - Efficiency gains (time saved, process improvements)
+   - Risk reduction (what problems this prevents)
+   - Qualitative benefits (morale, customer satisfaction)
+   - How to measure/estimate each benefit
+
+3. **Create financial projection**:
+   - Year-by-year cash flow (Years 0-3)
+   - Cumulative benefit/cost
+   - Break-even point
+   - NPV calculation approach
+   - ROI calculation
+
+4. **Sensitivity analysis**:
+   - Which assumptions matter most?
+   - Best case, base case, worst case scenarios
+   - At what point does this no longer make sense?
+
+5. **Risk-adjusted view**:
+   - Probability of success
+   - What could reduce benefits?
+   - What could increase costs?
+
+6. **Comparison to alternatives**:
+   - What are other ways to solve this problem?
+   - How does this option compare?
+
+Provide this in a format I can present to executives for decision-making.
+```
+
+---
+
+## 14. Process Improvement Identification {#14-process-improvement}
+
+**Use When:** Looking to optimize a business process
+
+**Prompt Template:**
+```
+I need to identify improvement opportunities for a business process.
+
+PROCESS:
+[Describe the process - from trigger to completion]
+
+CURRENT STATE:
+- Key steps: [List the main steps]
+- Cycle time: [How long does it take?]
+- Error rate: [How often does it fail?]
+- Volume: [How often does this process run?]
+- Pain points: [Known problems]
+
+GOALS:
+[What are we trying to improve? Speed? Quality? Cost? Consistency?]
+
+Help me identify improvement opportunities:
+
+1. **Process mapping**:
+   - Draw out current process flow
+   - Identify handoffs
+   - Spot bottlenecks
+   - Find rework loops
+
+2. **Waste identification** (Lean principles):
+   - Unnecessary steps (do we need this?)
+   - Waiting time (delays between steps)
+   - Over-processing (doing more than needed)
+   - Rework (corrections and fixes)
+   - Manual work (could be automated)
+
+3. **Quick wins** (low effort, high impact):
+   - What could be fixed immediately?
+   - What's causing most pain?
+   - What's easiest to implement?
+
+4. **Strategic improvements** (higher effort, transformational):
+   - What could fundamentally change this process?
+   - What technology could help?
+   - What skills or training needed?
+
+5. **Prioritization**:
+   - Effort vs impact matrix
+   - Dependencies between improvements
+   - Recommended sequence
+
+6. **Implementation considerations**:
+   - Change management needs
+   - Testing approach
+   - Success metrics
+
+Provide a roadmap with quick wins (0-3 months) and strategic improvements (3-12 months).
+```
+
+---
+
+## 15. Vendor/Partner Evaluation {#15-vendor-evaluation}
+
+**Use When:** Evaluating vendors, partners, or service providers
+
+**Prompt Template:**
+```
+I need to develop a vendor evaluation framework.
+
+VENDOR TYPE:
+[What service/product does this vendor provide?]
+
+BUSINESS CONTEXT:
+- How critical is this vendor? [Strategic, important, commodity]
+- Contract value: [Annual spend]
+- Current vendors: [Are we comparing new vs existing?]
+- Key requirements: [What must they provide?]
+
+Help me create a vendor evaluation framework:
+
+1. **Evaluation criteria** across these dimensions:
+   - Performance (quality, speed, reliability)
+   - Cost (pricing, value, TCO)
+   - Capability (capacity, coverage, expertise)
+   - Compliance (regulations, policies, certifications)
+   - Risk (financial stability, dependencies)
+   - Relationship (responsiveness, communication, partnership)
+   - Innovation (continuous improvement, technology)
+
+2. **Weighting system**:
+   - Which criteria matter most?
+   - Suggested weights for each criterion
+   - Must-haves vs nice-to-haves
+
+3. **Scoring methodology**:
+   - How to score each criterion (1-5 scale, etc.)
+   - What constitutes excellent vs poor performance
+   - How to handle qualitative vs quantitative factors
+
+4. **Red flags and deal-breakers**:
+   - What would disqualify a vendor?
+   - Early warning signs of problems
+   - Minimum thresholds per criterion
+
+5. **Comparison framework**:
+   - How to compare multiple vendors objectively
+   - Scorecard template
+   - Decision matrix
+
+6. **Ongoing monitoring**:
+   - KPIs to track vendor performance
+   - Review frequency
+   - Escalation triggers
+
+Provide this as a reusable scorecard I can apply to multiple vendors.
+```
+
+---
+
+## 16. Gap Analysis {#16-gap-analysis}
+
+**Use When:** Identifying gaps between current and desired state
+
+**Prompt Template:**
+```
+I need to conduct a gap analysis.
+
+AREA OF FOCUS:
+[What are you analyzing? Process, capability, performance, technology, etc.]
+
+CURRENT STATE:
+[Describe where you are today]
+
+DESIRED STATE:
+[Describe where you want to be]
+
+TARGET TIMEFRAME:
+[When do you want to achieve the desired state?]
+
+Help me conduct a comprehensive gap analysis:
+
+1. **Detailed gap identification**:
+   - List specific gaps across:
+     * Process gaps
+     * Technology gaps
+     * Skills/capability gaps
+     * Performance gaps
+     * Resource gaps
+   - Quantify each gap (metrics showing current vs desired)
+
+2. **Root cause analysis**:
+   - Why do these gaps exist?
+   - What's preventing us from being at desired state?
+   - Are these gaps symptoms or root causes?
+
+3. **Impact assessment**:
+   - Which gaps are most critical?
+   - What's the cost of not closing each gap?
+   - Which gaps enable closing other gaps?
+
+4. **Prioritization**:
+   - Must-fix gaps (critical, foundational)
+   - Should-fix gaps (important, high impact)
+   - Nice-to-fix gaps (beneficial but not urgent)
+
+5. **Gap-closing strategies**:
+   - For each gap, what are the options to close it?
+   - Rough effort and timeline estimates
+   - Dependencies and sequencing
+   - Quick wins vs long-term initiatives
+
+6. **Roadmap development**:
+   - Phase 1: Immediate priorities (0-3 months)
+   - Phase 2: Medium-term (3-6 months)
+   - Phase 3: Long-term (6-12+ months)
+
+Present as a gap analysis that can inform strategic planning.
+```
+
+---
+
+## 17. Benchmarking & Best Practices {#17-benchmarking}
+
+**Use When:** Comparing performance to industry standards or best practices
+
+**Prompt Template:**
+```
+I need to benchmark our performance and identify best practices.
+
+WHAT WE'RE BENCHMARKING:
+[Process, metric, function, etc.]
+
+OUR CURRENT PERFORMANCE:
+[Describe current metrics and performance levels]
+
+INDUSTRY/PEERS:
+[Industry sector, peer group, or companies to compare against]
+
+Help me conduct a benchmarking analysis:
+
+1. **Identify relevant benchmarks**:
+   - What metrics should we compare?
+   - What are industry standards for these metrics?
+   - What do top performers achieve?
+   - What are common pitfalls or failure rates?
+
+2. **Suggest data sources**:
+   - Industry reports or surveys
+   - Public company disclosures
+   - Trade associations
+   - Analyst reports
+   - Research studies
+   - Where to find this information
+
+3. **Performance gap analysis**:
+   - Where do we stand vs industry average?
+   - Where do we stand vs top quartile?
+   - Which metrics are we leading/lagging on?
+   - Are gaps narrowing or widening?
+
+4. **Best practice identification**:
+   - What do top performers do differently?
+   - What processes, tools, or approaches should we adopt?
+   - What's feasible vs aspirational for our context?
+   - Quick wins we could implement
+
+5. **Implementation roadmap**:
+   - Which best practices to adopt first
+   - What would it take to move from 50th percentile to 75th percentile?
+   - Realistic timeline and milestones
+
+6. **Cautionary notes**:
+   - Why might benchmarks not be directly comparable?
+   - What context differences matter?
+   - What should we NOT try to copy?
+
+Format as a benchmarking report with clear performance gaps and recommendations.
+```
+
+---
+
+## 18. Forecasting Methodology {#18-forecasting}
+
+**Use When:** Developing forecasts or projections
+
+**Prompt Template:**
+```
+I need to develop a forecasting approach.
+
+WHAT I'M FORECASTING:
+[Metric or outcome to forecast]
+
+HISTORICAL DATA:
+- Time period available: [How far back does data go?]
+- Frequency: [Daily, weekly, monthly?]
+- Sample: [Recent values if available]
+- Patterns observed: [Trends, seasonality, cyclicality]
+
+CONTEXT:
+- Business drivers: [What influences this metric?]
+- Known future changes: [Anything that will change?]
+- Forecast horizon: [How far ahead?]
+- Accuracy requirement: [How precise must it be?]
+
+Help me select and implement a forecasting approach:
+
+1. **Method selection**:
+   - Recommend forecasting method(s):
+     * Simple (moving average, trend extrapolation)
+     * Time series (ARIMA, exponential smoothing)
+     * Regression (if drivers are known)
+     * Scenario-based (multiple scenarios)
+   - Pros and cons of each approach
+   - Which is best for my situation and why
+
+2. **Model development**:
+   - Step-by-step implementation guide
+   - How to handle seasonality
+   - How to incorporate known events
+   - How to adjust for outliers
+
+3. **Validation approach**:
+   - How to test forecast accuracy
+   - What historical period to hold out for testing
+   - Accuracy metrics (MAPE, RMSE, etc.)
+   - How to know if forecast is "good enough"
+
+4. **Uncertainty quantification**:
+   - Confidence intervals
+   - Best case / base case / worst case
+   - What assumptions matter most
+   - Sensitivity analysis
+
+5. **Practical implementation**:
+   - Can this be done in Excel? Or need Python/R?
+   - How to update forecast as new data comes in
+   - Documentation of assumptions
+   - How often to refresh forecast
+
+Provide example calculations or code if possible.
+```
+
+---
+
+# Communication & Presentations
+
+## 19. Executive Summary Writing {#19-executive-summary}
+
+**Use When:** Summarizing analysis or recommendations for executives
+
+**Prompt Template:**
+```
+I need to write an executive summary for my analysis.
+
+ANALYSIS DETAILS:
+- Topic: [What you analyzed]
+- Key findings: [Main insights from your analysis]
+- Recommendation: [What you're proposing]
+- Impact: [Business impact or benefit]
+
+AUDIENCE:
+- Role/level: [Who will read this - VP, C-suite, etc.]
+- Their priorities: [What do they care about most?]
+- Their time: [How much time will they spend reading?]
+- Context: [What do they already know?]
+
+FULL ANALYSIS:
+[Brief summary or key points from your full analysis]
+
+Help me write an executive summary that:
+
+1. **Hooks attention immediately**:
+   - Compelling opening sentence
+   - States the business impact upfront
+   - Clear and specific, not generic
+
+2. **Follows BLUF (Bottom Line Up Front)**:
+   - Answer/recommendation in first paragraph
+   - Don't make them wait for the conclusion
+
+3. **Is structured clearly**:
+   - Situation/background (1-2 sentences)
+   - Key findings (2-3 bullets)
+   - Recommendation (specific action)
+   - Expected impact (quantified if possible)
+   - Next steps (what happens now)
+
+4. **Uses executive-friendly language**:
+   - No jargon or technical terms
+   - Concrete over abstract
+   - Active voice
+   - Short sentences
+
+5. **Fits on one page**:
+   - Maximum 250-300 words
+   - Readable in 60-90 seconds
+   - Sufficient detail to make decision without reading full report
+
+Provide two versions: one technical and one extremely simplified.
+```
+
+---
+
+## 20. Presentation Structure Design {#20-presentation-structure}
+
+**Use When:** Planning the structure of a presentation
+
+**Prompt Template:**
+```
+I need to structure a presentation effectively.
+
+PRESENTATION CONTEXT:
+- Purpose: [What is the goal? Inform, persuade, get approval, etc.]
+- Topic: [What you're presenting]
+- Audience: [Who you're presenting to]
+- Time available: [How long is the presentation?]
+- Format: [In-person, virtual, deck sent ahead]
+
+KEY CONTENT:
+[List your main points, findings, or messages]
+
+Help me structure this presentation:
+
+1. **Recommend slide flow**:
+   - Suggested number of slides
+   - What goes on each slide
+   - How to sequence for maximum impact
+   - Where to use visual data vs text
+
+2. **Opening** (first 1-2 slides):
+   - Hook to grab attention
+   - Clear purpose statement
+   - Roadmap of what's coming
+
+3. **Body** (main slides):
+   - Logical flow of argument
+   - One clear message per slide
+   - Supporting evidence
+   - Transitions between topics
+
+4. **Closing** (last 1-2 slides):
+   - Clear call to action
+   - Next steps
+   - Decision required (if any)
+
+5. **Appendix**:
+   - What detailed data to include
+   - How to organize backup slides
+
+6. **Storytelling elements**:
+   - Narrative arc
+   - Where to use examples or cases
+   - How to make data engaging
+   - Where to address objections
+
+7. **Design principles**:
+   - Text vs visual balance
+   - Chart types for different data
+   - Color scheme suggestions
+   - Font and layout tips
+
+Provide both a detailed outline and sample slide titles.
+```
+
+---
+
+## 21. Data Storytelling {#21-data-storytelling}
+
+**Use When:** Transforming data analysis into compelling narrative
+
+**Prompt Template:**
+```
+I have analysis results and need to tell a compelling data story.
+
+THE DATA:
+[Describe your key findings, trends, or insights]
+
+AUDIENCE:
+[Who needs to hear this story?]
+
+DESIRED ACTION:
+[What do you want them to do with this information?]
+
+Help me craft a data story that:
+
+1. **Has a clear narrative structure**:
+   - Setup: What's the situation?
+   - Conflict: What's the problem or opportunity?
+   - Resolution: What did we find? What should we do?
+
+2. **Leads with insight, not data**:
+   - Transform these findings into "So what?" statements
+   - Lead with the meaning, support with numbers
+   - Avoid data dumps
+
+3. **Uses the right visualizations**:
+   - What chart types best show these insights?
+   - How to highlight the most important information
+   - What not to include
+
+4. **Creates emotional connection**:
+   - What does this mean in human terms?
+   - What analogies or examples make it relatable?
+   - How to make abstract numbers concrete
+
+5. **Builds to recommendation**:
+   - How to transition from insight to action
+   - Making the recommendation feel inevitable
+   - Addressing "why now"
+
+6. **Handles complexity**:
+   - How to simplify without oversimplifying
+   - What details to include vs relegate to appendix
+   - How to layer information
+
+Provide:
+- A narrative outline
+- Key sound bites I can use
+- Visualization recommendations
+- Suggested flow from data to action
+```
+
+---
+
+## 22. Recommendation Development {#22-recommendation-development}
+
+**Use When:** Converting analysis into actionable recommendations
+
+**Prompt Template:**
+```
+I need to develop clear, actionable recommendations based on my analysis.
+
+ANALYSIS FINDINGS:
+[Summarize what your analysis showed]
+
+BUSINESS CONTEXT:
+- Problem/opportunity: [What we're addressing]
+- Constraints: [Budget, time, resources, politics]
+- Stakeholder priorities: [What matters most to decision makers]
+- Risk tolerance: [Conservative or aggressive?]
+
+Help me develop recommendations that are:
+
+1. **Specific and actionable**:
+   - Exactly what should be done
+   - Who should do it
+   - When it should happen
+   - How to measure success
+   - (Avoid vague recommendations like "improve performance")
+
+2. **Prioritized**:
+   - Quick wins (immediate impact, low effort)
+   - Strategic initiatives (high impact, higher effort)
+   - Long-term improvements (transformational)
+   - Rank by: Impact × Feasibility
+
+3. **Risk-adjusted**:
+   - What could go wrong with each recommendation
+   - Mitigation strategies
+   - Alternative approaches if primary fails
+
+4. **Financially justified**:
+   - Expected benefit (quantified if possible)
+   - Investment required
+   - Rough ROI or payback period
+   - Break-even analysis
+
+5. **Implementation-ready**:
+   - Prerequisites or dependencies
+   - Resources needed
+   - Timeline estimate
+   - Success metrics
+
+For each recommendation provide:
+- Title (action-oriented, clear)
+- Problem it solves
+- Proposed approach
+- Expected impact
+- Investment required
+- Timeline
+- Risks and mitigations
+- Success criteria
+- Next steps
+
+Format as a decision document ready for stakeholder review.
+```
+
+---
+
+## 23. Meeting Agenda & Prep {#23-meeting-prep}
+
+**Use When:** Preparing for an important meeting
+
+**Prompt Template:**
+```
+I need to prepare for an important meeting.
+
+MEETING PURPOSE:
+[What is the meeting for? Kickoff, review, decision, etc.]
+
+ATTENDEES:
+- [Attendee 1]: [Their role and interests]
+- [Attendee 2]: [Their role and interests]
+- [Continue for all key attendees]
+
+TIME AVAILABLE:
+[Meeting length]
+
+MY OBJECTIVES:
+[What I need to accomplish in this meeting]
+
+Help me prepare:
+
+1. **Create an effective agenda**:
+   - Time allocation for each topic
+   - Logical flow
+   - Decision points clearly marked
+   - Discussion vs information sharing
+
+2. **Pre-meeting preparation**:
+   - What materials to send ahead
+   - What context to provide
+   - How far in advance to send
+   - What to bring to meeting
+
+3. **Key questions to ask**:
+   - To clarify requirements
+   - To uncover concerns
+   - To test alignment
+   - To drive toward decision
+
+4. **Potential objections**:
+   - What resistance might I face?
+   - How to address each objection
+   - Data or evidence to have ready
+
+5. **Meeting facilitation**:
+   - Opening (set tone, state purpose)
+   - How to keep on track
+   - How to handle tangents
+   - How to drive to conclusion
+
+6. **Closing**:
+   - How to summarize
+   - How to secure commitments
+   - Next steps documentation
+   - Follow-up plan
+
+7. **Post-meeting**:
+   - What to document
+   - Follow-up email template
+   - How to track action items
+
+Provide:
+- Formatted agenda I can send
+- Talk track for key sections
+- Likely questions and good answers
+```
+
+---
+
+## 24. Email Communication {#24-email-communication}
+
+**Use When:** Writing important business emails
+
+**Prompt Template:**
+```
+I need to write an effective email.
+
+EMAIL PURPOSE:
+[What is this email trying to accomplish?]
+
+RECIPIENT:
+- Who: [Name and role]
+- Relationship: [Boss, peer, stakeholder, vendor]
+- Context: [What do they know already?]
+- What they care about: [Their priorities]
+
+SITUATION:
+[Background context]
+
+KEY INFORMATION/REQUEST:
+[What you need to communicate or ask for]
+
+TONE:
+[Formal/informal, urgent/routine, good news/bad news]
+
+Help me write an email that:
+
+1. **Gets opened and read**:
+   - Compelling subject line (specific, not generic)
+   - Strong opening sentence
+   - Scannable format
+
+2. **Communicates clearly**:
+   - One clear ask or message
+   - Essential context (not history dump)
+   - Appropriate level of detail
+   - Organized for easy reading
+
+3. **Drives action**:
+   - Specific request (not "please advise")
+   - Clear deadline
+   - Make it easy to respond
+   - Provide options if appropriate
+
+4. **Professional tone**:
+   - Appropriate formality for relationship
+   - Confident but not demanding
+   - Positive framing where possible
+   - Direct without being blunt
+
+5. **Structure**:
+   - Purpose/ask upfront
+   - Brief context
+   - Details (bullets if multiple points)
+   - Clear next steps
+   - Appropriate closing
+
+Provide:
+- Subject line options
+- Full email draft
+- Alternative versions for different tones if needed
+```
+
+**Example Usage:**
+```
+EMAIL PURPOSE:
+Request approval for additional analysis time
+
+RECIPIENT:
+- Who: VP of Operations
+- Relationship: Project sponsor
+- Context: Knows about current project, tight deadlines
+- What they care about: Timely decisions, quality analysis
+
+SITUATION:
+Current project was scoped for 3 weeks, but data quality issues have added 1 week delay. Need approval to extend.
+
+KEY INFORMATION/REQUEST:
+Need 1 additional week to complete analysis properly. Want to ensure quality over speed.
+
+TONE:
+Professional, proactive, solution-oriented
+
+[AI will draft effective email]
+```
+
+---
+
+# Project Management
+
+## 25. Project Scoping & Planning {#25-project-scoping}
+
+**Use When:** Defining scope and plan for a new project
+
+**Prompt Template:**
+```
+I need to scope and plan an analytics project.
+
+PROJECT REQUEST:
+[What is being asked for?]
+
+INITIAL CONTEXT:
+- Requester: [Who's asking]
+- Timeline expectation: [What they said]
+- Business driver: [Why now]
+- Known constraints: [Any limitations]
+
+Help me develop a project plan:
+
+1. **Scope definition**:
+   - What's in scope (specific deliverables)
+   - What's out of scope (explicit exclusions)
+   - Dependencies (what else needs to happen)
+   - Assumptions (what we're assuming is true)
+
+2. **Work breakdown**:
+   - Phase 1: Discovery
+   - Phase 2: Define  
+   - Phase 3: Develop
+   - Phase 4: Deliver
+   - Phase 5: Document
+   - Key activities within each phase
+
+3. **Timeline estimation**:
+   - Time required for each phase
+   - Dependencies between tasks
+   - Buffer for risks/unknowns
+   - Realistic overall timeline
+
+4. **Resource requirements**:
+   - What skills needed
+   - What tools/systems access needed
+   - Who else needs to be involved
+   - Estimated effort (hours)
+
+5. **Risk identification**:
+   - What could delay this
+   - What could cause it to fail
+   - Early warning indicators
+   - Mitigation strategies
+
+6. **Success criteria**:
+   - What "done" looks like
+   - Quality standards
+   - Acceptance criteria
+   - How to measure success
+
+7. **Stakeholder engagement**:
+   - Who needs to approve what
+   - Review/checkpoint schedule
+   - Communication plan
+
+Provide this in project charter format ready to send to sponsor.
+```
+
+---
+
+## 26. Quality Assurance Checklist {#26-quality-assurance}
+
+**Use When:** Reviewing work before delivery
+
+**Prompt Template:**
+```
+I need a comprehensive QA checklist for my analysis/deliverable.
+
+DELIVERABLE TYPE:
+[PowerPoint deck, Excel model, dashboard, report, etc.]
+
+ANALYSIS TYPE:
+[Financial analysis, operational metrics, vendor evaluation, etc.]
+
+AUDIENCE:
+[Who will receive and use this?]
+
+Create a comprehensive QA checklist covering:
+
+1. **Data Quality**:
+   - [ ] Data sources documented and validated
+   - [ ] Record counts verified
+   - [ ] Date ranges correct
+   - [ ] Joins produce expected results
+   - [ ] No unexpected nulls in critical fields
+   - [ ] Sample records manually verified
+   - [ ] Numbers reconcile to source systems
+   - [ ] [Other data checks specific to my analysis]
+
+2. **Calculation Accuracy**:
+   - [ ] Formulas match metrics dictionary
+   - [ ] Edge cases handled correctly (nulls, zeros, negatives)
+   - [ ] Totals and subtotals reconcile
+   - [ ] Percentages add up correctly
+   - [ ] Year-over-year calcs use consistent time periods
+   - [ ] Manual spot-checks of 5-10 calculations
+   - [ ] [Other calculation checks]
+
+3. **Logic and Analysis**:
+   - [ ] Business rules applied correctly
+   - [ ] Filters and exclusions documented
+   - [ ] Segmentation logic is sound
+   - [ ] Statistical tests appropriate for data
+   - [ ] Conclusions supported by data
+   - [ ] Alternative explanations considered
+   - [ ] [Other logic checks]
+
+4. **Presentation Quality**:
+   - [ ] Clear narrative flow
+   - [ ] Key message on each slide/section
+   - [ ] Charts are correct chart type
+   - [ ] Axes labeled and scaled appropriately
+   - [ ] Color scheme consistent and accessible
+   - [ ] No spelling or grammar errors
+   - [ ] Professional formatting throughout
+   - [ ] [Other presentation checks]
+
+5. **Completeness**:
+   - [ ] Answers the business question
+   - [ ] All required components present
+   - [ ] Sources cited
+   - [ ] Assumptions documented
+   - [ ] Limitations acknowledged
+   - [ ] Recommendations actionable
+   - [ ] Next steps clear
+   - [ ] [Other completeness checks]
+
+6. **Final Review**:
+   - [ ] Fresh eyes review (someone else looked at it)
+   - [ ] Printed and reviewed on paper
+   - [ ] Reviewed from audience's perspective
+   - [ ] All action items addressed
+   - [ ] Ready for distribution
+
+Customize this checklist for my specific deliverable and create a sign-off form.
+```
+
+---
+
+## 27. Documentation Improvement {#27-documentation}
+
+**Use When:** Improving documentation for code, analysis, or processes
+
+**Prompt Template:**
+```
+I need to improve documentation for my work.
+
+WHAT NEEDS DOCUMENTATION:
+[Code, analysis, process, system, etc.]
+
+CURRENT STATE:
+[Describe current documentation, if any]
+
+AUDIENCE:
+[Who will use this documentation? Future me, team members, new hires?]
+
+PURPOSE:
+[Why do they need this documentation? Maintenance, updates, learning?]
+
+Help me create effective documentation:
+
+1. **Structure and organization**:
+   - Recommended documentation structure
+   - What documents/sections to create
+   - How to organize information
+   - Navigation approach
+
+2. **Essential content**:
+   - What must be documented
+   - What level of detail
+   - What can be omitted
+   - Prioritization of content
+
+3. **For code documentation**:
+   - File/module headers (what to include)
+   - Function documentation (parameters, returns, examples)
+   - Inline comments (when and what to comment)
+   - README structure
+   - Examples and usage
+   - Dependencies and setup
+
+4. **For analysis documentation**:
+   - Business context and purpose
+   - Data sources and definitions
+   - Methodology and approach
+   - Key findings and insights
+   - Assumptions and limitations
+   - How to update/refresh
+
+5. **For process documentation**:
+   - Process overview
+   - Step-by-step instructions
+   - Decision points
+   - Troubleshooting guide
+   - Roles and responsibilities
+   - FAQs
+
+6. **Best practices**:
+   - Write for your audience
+   - Use examples liberally
+   - Keep it current (version control)
+   - Make it searchable
+   - Test it (have someone follow it)
+
+Provide:
+- Documentation template
+- Example sections filled out
+- Review checklist
+```
+
+---
+
+## 28. Prioritization Framework {#28-prioritization}
+
+**Use When:** Deciding what to work on first
+
+**Prompt Template:**
+```
+I have multiple competing priorities and need to decide what to focus on.
+
+ITEMS TO PRIORITIZE:
+1. [Item 1 description]
+2. [Item 2 description]
+3. [Item 3 description]
+[Continue for all items]
+
+CONTEXT:
+- Time available: [Your capacity]
+- Constraints: [Any fixed deadlines or dependencies]
+- Stakeholders: [Who's asking for what]
+
+EVALUATION FACTORS:
+[What matters: Business impact? Urgency? Effort? Strategic importance?]
+
+Help me prioritize using multiple frameworks:
+
+1. **Impact vs Effort Matrix**:
+   - Plot each item on 2×2 grid
+   - Quick wins (high impact, low effort) → Do first
+   - Strategic (high impact, high effort) → Plan carefully
+   - Fill-ins (low impact, low effort) → Do if time permits
+   - Time sinks (low impact, high effort) → Avoid
+
+2. **Urgency vs Importance (Eisenhower)**:
+   - Urgent + Important → Do now
+   - Important + Not urgent → Schedule
+   - Urgent + Not important → Delegate
+   - Neither → Eliminate
+
+3. **Value vs Complexity**:
+   - For each item assess:
+     * Business value (High/Med/Low)
+     * Technical complexity (High/Med/Low)
+     * Political complexity (High/Med/Low)
+   - Factor all three into recommendation
+
+4. **RICE Score** (Reach × Impact × Confidence / Effort):
+   - Reach: How many people/processes affected
+   - Impact: How much benefit
+   - Confidence: How certain are you
+   - Effort: Person-weeks required
+
+5. **Dependencies and sequencing**:
+   - What must be done before what
+   - What enables multiple other things
+   - What blocks other work
+
+Provide:
+- Scored and ranked list
+- Recommended order
+- Justification for top 3 priorities
+- What to say "no" to and why
+```
+
+---
+
+## 29. Change Management Planning {#29-change-management}
+
+**Use When:** Planning how to implement changes from your analysis
+
+**Prompt Template:**
+```
+I need to develop a change management plan.
+
+THE CHANGE:
+[What is changing based on your analysis/recommendation?]
+
+IMPACT:
+- Who is affected: [Teams, roles, individuals]
+- What changes for them: [Processes, systems, responsibilities]
+- Magnitude: [Small adjustment or major transformation?]
+
+CONTEXT:
+- Current state: [How things work today]
+- Desired state: [How things should work after]
+- Timeline: [When this needs to happen]
+- Past change experiences: [History of change in this area]
+
+Help me develop a change management plan:
+
+1. **Stakeholder analysis**:
+   - Who are the change champions?
+   - Who are potential resisters?
+   - Who has influence?
+   - What's in it for each group?
+   - Concerns each group likely has
+
+2. **Communication strategy**:
+   - Key messages (what, why, when, how)
+   - Communication channels
+   - Frequency and timing
+   - Tailored messages per audience
+   - Two-way communication approach
+
+3. **Resistance management**:
+   - Anticipated objections
+   - How to address each
+   - What might derail this
+   - Early warning signs of problems
+
+4. **Training and support**:
+   - What new skills needed
+   - Training approach
+   - Job aids and resources
+   - Ongoing support plan
+
+5. **Implementation approach**:
+   - Phased vs big bang
+   - Pilot group strategy
+   - Go/no-go criteria
+   - Rollback plan
+
+6. **Success measures**:
+   - Adoption metrics
+   - Performance metrics
+   - Leading indicators
+   - How to know if change is sticking
+
+7. **Timeline and milestones**:
+   - Pre-launch activities
+   - Launch activities
+   - Post-launch monitoring
+   - Key decision points
+
+Provide this as a change management plan I can present with my recommendations.
+```
+
+---
+
+## 30. Lessons Learned Facilitation {#30-lessons-learned}
+
+**Use When:** Reflecting on completed projects
+
+**Prompt Template:**
+```
+I need to conduct a lessons learned session for a completed project.
+
+PROJECT OVERVIEW:
+- Name: [Project name]
+- Duration: [Actual time]
+- Outcome: [Was it successful? Delivered on time?]
+- Team: [Who was involved]
+
+Help me structure an effective lessons learned session:
+
+1. **Pre-work preparation**:
+   - What data to gather before the session
+   - What metrics to review (timeline, effort, quality)
+   - What questions to send team ahead of time
+   - How to create psychological safety
+
+2. **Session structure** (60-90 min):
+   - Opening (set the tone - learning, not blame)
+   - Project recap (facts and outcomes)
+   - What went well (celebrate successes)
+   - What didn't go well (identify problems)
+   - Root cause analysis (why things happened)
+   - Actions for next time (specific improvements)
+   - Commitments (who will do what)
+   - Closing (thank team)
+
+3. **Key questions to ask**:
+   - What would you do the same?
+   - What would you do differently?
+   - What surprised us (good or bad)?
+   - What did we learn about our process?
+   - What did we learn about stakeholders?
+   - What did we learn about the data/tools?
+   - What should we stop doing?
+   - What should we start doing?
+   - What should we continue doing?
+
+4. **Facilitation techniques**:
+   - How to get quiet people to contribute
+   - How to manage dominant voices
+   - How to dig deeper without blaming
+   - How to turn complaints into actionable improvements
+
+5. **Documentation approach**:
+   - Template for capturing lessons
+   - How to organize findings
+   - What to share vs keep internal
+   - How to track improvements
+
+6. **Follow-through**:
+   - How to ensure lessons get applied
+   - Where to store lessons for future reference
+   - How to incorporate into next project
+   - Measurement of improvement
+
+Provide:
+- Session agenda with timing
+- Question guide for facilitation
+- Lessons learned template
+- Action item tracking format
+```
+
+---
+
+# How to Get Maximum Value from These Prompts
+
+## 1. Be Specific with Context
+The more specific information you provide in the bracketed sections, the better the AI's response will be. Generic inputs = generic outputs.
+
+**Weak:** "I'm analyzing vendor performance"
+**Strong:** "I'm analyzing repossession vendor performance across 15 vendors, 12 months of data, looking at recovery rates, cycle times, and compliance scores to inform quarterly allocation decisions"
+
+## 2. Iterate and Refine
+Don't accept the first response as final. Ask follow-up questions:
+- "Can you make this more specific to financial services?"
+- "Can you give me an example using real numbers?"
+- "What am I missing here?"
+- "Can you simplify this?"
+
+## 3. Combine Prompts
+Many tasks require multiple prompts in sequence:
+1. Start with Problem Framing
+2. Then use Data Analysis Planning
+3. Follow with Quality Assurance Checklist
+4. End with Executive Summary Writing
+
+## 4. Customize and Save
+After using a prompt, save your customized version for your specific context. Build your own personal prompt library.
+
+## 5. Share with Your Team
+These prompts can help standardize approaches across your team. Everyone can use the same frameworks and get consistent quality.
+
+## 6. Update Based on Experience
+As you use these prompts, you'll discover what works best for your specific situation. Update them based on what you learn.
+
+---
+
+# Quick Reference: When to Use Which Prompt
+
+| If You Need To... | Use This Prompt |
+|-------------------|-----------------|
+| Start a new project | #1 Problem Framing, #25 Project Scoping |
+| Check if you're on track | #2 Assumption Testing, #26 Quality Assurance |
+| Understand stakeholders | #3 Stakeholder Mapping, #23 Meeting Prep |
+| Generate ideas | #4 Options Generation, #14 Process Improvement |
+| Make a decision | #5 Decision Framework, #13 Cost-Benefit Analysis |
+| Identify risks | #6 Risk Identification |
+| Define metrics | #7 Metrics Definition |
+| Plan analysis | #8 Data Analysis Planning, #12 Statistical Testing |
+| Investigate a problem | #9 Root Cause Analysis, #16 Gap Analysis |
+| Segment your data | #10 Segmentation Strategy |
+| Check data quality | #11 Data Quality Assessment |
+| Evaluate vendors | #15 Vendor Evaluation |
+| Compare to others | #17 Benchmarking |
+| Make predictions | #18 Forecasting |
+| Write for executives | #19 Executive Summary, #20 Presentation Structure |
+| Tell a story with data | #21 Data Storytelling |
+| Make recommendations | #22 Recommendation Development |
+| Prepare for a meeting | #23 Meeting Prep |
+| Write an email | #24 Email Communication |
+| Improve documentation | #27 Documentation |
+| Prioritize work | #28 Prioritization Framework |
+| Implement changes | #29 Change Management |
+| Learn from past work | #30 Lessons Learned |
+
+---
+
+# Advanced Tips
+
+## For Complex Multi-Step Projects
+Use multiple prompts in this sequence:
+
+**Planning Phase:**
+1. Problem Framing (#1)
+2. Stakeholder Mapping (#3)
+3. Project Scoping (#25)
+4. Risk Identification (#6)
+
+**Execution Phase:**
+5. Data Analysis Planning (#8)
+6. Data Quality Assessment (#11)
+7. Quality Assurance Checklist (#26)
+
+**Communication Phase:**
+8. Data Storytelling (#21)
+9. Recommendation Development (#22)
+10. Executive Summary (#19)
+11. Presentation Structure (#20)
+
+**Closing Phase:**
+12. Lessons Learned (#30)
+13. Documentation (#27)
+
+## For Quick Tactical Needs
+Use these for fast results:
+- Need to decide what to work on? → #28 Prioritization
+- Need to write an email? → #24 Email Communication
+- Preparing for a meeting? → #23 Meeting Prep
+- Checking your work? → #26 Quality Assurance
+
+---
+
+# Prompt Effectiveness Checklist
+
+Before submitting any prompt, make sure you've:
+- [ ] Filled in all bracketed sections with specifics
+- [ ] Provided relevant context about your situation
+- [ ] Specified your audience (who will see/use this)
+- [ ] Indicated timeline/urgency if relevant
+- [ ] Stated desired output format
+- [ ] Included any constraints or requirements
+
+**Remember:** Garbage in = Garbage out. High-quality inputs = High-quality outputs.
+
+---
+
+*Reusable AI Prompts | Version 1.0 | For analytics & strategy professionals*
