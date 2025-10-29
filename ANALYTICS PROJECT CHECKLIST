@@ -1,0 +1,148 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    ANALYTICS PROJECT CHECKLIST
+         Keep this visible throughout your project - Check off as you go
+═══════════════════════════════════════════════════════════════════════════════
+
+WEEK 1: DISCOVER & DEFINE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DAY 1: DISCOVERY
+□ Research: Review existing reports, emails, documentation (45 min)
+□ Prepare kickoff questions (business question, success criteria, scope)
+□ Set up project folder structure (data, code, docs, deliverables)
+□ Print this checklist and put on desk
+□ Kickoff meeting: Ask critical questions, take detailed notes (60 min)
+□ Draft project charter with business question, scope, deliverable format
+□ Email charter to sponsor: "Does this match your expectations?"
+⚠ RED FLAG: Writing code on Day 1? STOP. Do discovery first.
+
+DAY 2: REQUIREMENTS
+□ Create metrics dictionary (definition, formula, source, validation)
+□ Map data sources and lineage (tables, joins, grain, latency)
+□ Identify data quality concerns and document
+□ Mock up final deliverable (PowerPoint sketch, dashboard layout, etc.)
+□ Get stakeholder approval on mockup BEFORE building
+□ Update charter with any changes from mockup review
+⚠ RED FLAG: Vague metrics definitions? STOP. Get clarity in writing.
+
+DAY 3: VALIDATION
+□ Pull sample data from each source
+□ Run data quality checks (completeness, accuracy, consistency)
+□ Document data issues and resolution plan
+□ Validate numbers against published reports
+□ Create step-by-step analysis plan
+□ Set up code structure and documentation
+□ Schedule weekly check-ins (Monday mornings, 15-30 min)
+⚠ RED FLAG: Numbers don't match reports? STOP. Figure out why first.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WEEK 2-3: DEVELOP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EVERY MONDAY: CHECK-IN
+□ Show work-in-progress (even if rough/incomplete)
+□ Share what's working and what's blocked
+□ Get feedback early and incorporate
+□ Adjust timeline if needed
+⚠ RED FLAG: Week 2 and sponsor hasn't seen anything? STOP. Show work today.
+
+BUILD PHASE
+□ Extract and prepare data (follow analysis plan)
+□ Calculate metrics (reference metrics dictionary)
+□ Validate calculations against known values
+□ Create visualizations (match mockup format)
+□ Document code as you write it
+□ Keep changelog of major changes
+□ Internal QA: Check for errors before showing
+⚠ RED FLAG: Building complex logic and not sure why? STOP. Check charter.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WEEK 4: DELIVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FINALIZE
+□ Lead with the answer (executive summary / BLUF approach)
+□ Tailor message to audience
+□ Make insights actionable (So what? Now what?)
+□ Professional formatting and polish
+□ Final QA check (numbers, spelling, formatting)
+□ Internal review before sending to stakeholder
+⚠ RED FLAG: Just explaining what happened, not what to do? Add recommendations.
+
+PRESENT
+□ Present findings to stakeholder
+□ Get feedback and next steps
+□ Document action items and owners
+□ Follow up on any open questions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WEEK 5: DOCUMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CLOSE OUT
+□ Write lessons learned (what worked, what didn't, what to do next time)
+□ Document code thoroughly (README, comments, logic)
+□ Create runbook if recurring analysis
+□ Knowledge transfer to team or stakeholders
+□ Archive project files in organized structure
+□ Update this framework with improvements
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚨 CRITICAL RED FLAGS - STOP IMMEDIATELY IF YOU SEE THESE
+═══════════════════════════════════════════════════════════════════════════════
+
+□ Day 1 and writing code → Do discovery first
+□ Week 2 and sponsor hasn't seen work → Schedule check-in today
+□ Same metric calculated multiple ways → Get clear definition
+□ Numbers don't match published reports → Investigate before proceeding
+□ Building something complex, not sure why → Review project charter
+□ Stakeholder surprised by deliverable → Show work-in-progress earlier
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ PROJECT SUCCESS METRICS
+═══════════════════════════════════════════════════════════════════════════════
+
+EFFICIENCY:
+□ Delivered within estimated timeline (±20%)
+□ Less than 10 hours of rework
+□ First draft within 20% of final
+
+PROCESS:
+□ Project charter signed off by Day 3
+□ Weekly check-ins starting Week 1
+□ Data validated before analysis
+
+QUALITY:
+□ Zero calculation errors
+□ Stakeholder: "This is exactly what I needed"
+□ Code is documented and reusable
+
+OUTCOME:
+□ Analysis drives an actual decision
+□ Deliverable gets used (not shelved)
+□ Stakeholder requests follow-up work
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📌 KEEP IN MIND THROUGHOUT
+═══════════════════════════════════════════════════════════════════════════════
+
+• What business question am I answering?
+• Can I explain this analysis in one sentence?
+• If I presented tomorrow, what would I show?
+• Am I making this more complex than it needs to be?
+• When's the last time I checked in with my stakeholder?
+
+═══════════════════════════════════════════════════════════════════════════════
+
+THE ONE RULE: Define "done" before you start building.
+
+═══════════════════════════════════════════════════════════════════════════════
+Project: ____________________________________________  Due: __________________
+Analyst: ____________________________________________  Sponsor: ______________
+═══════════════════════════════════════════════════════════════════════════════
