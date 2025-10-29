@@ -1,0 +1,695 @@
+# Quick Start Guide: Your First 3 Days on Any Analytics Project
+
+## 🚀 Purpose
+
+This guide gives you **exact steps** to follow on Days 1-3 of your next analytics project. Following this prevents the most common (and expensive) project mistakes.
+
+**Core Principle:** Spend your first 3 days understanding the problem, not solving it.
+
+---
+
+## ⏰ Time Investment
+
+- **Day 1:** 4-6 hours (discovery & kickoff)
+- **Day 2:** 4-6 hours (requirements & mockup)
+- **Day 3:** 4-6 hours (data validation)
+- **Total:** 12-18 hours of setup that saves 40+ hours of rework
+
+---
+
+# 📅 DAY 1: DISCOVERY & KICKOFF
+
+**Goal:** Understand the business question before touching any data.
+
+**Time:** 4-6 hours  
+**Rule:** No coding today. You're gathering context.
+
+---
+
+## Morning: Pre-Kickoff Preparation (2 hours)
+
+### Step 1: Research the Context (45 min)
+**Before the kickoff meeting, get smart on the topic:**
+
+- [ ] Review any existing reports or dashboards on this topic
+- [ ] Search your email for previous discussions
+- [ ] Check if anyone has done similar analysis before
+- [ ] Read relevant policies, procedures, or documentation
+- [ ] Look up key terms or acronyms you don't know
+
+**Ask yourself:**
+- What do I already know about this topic?
+- What don't I understand yet?
+- Who are the key stakeholders?
+
+---
+
+### Step 2: Draft Initial Questions (30 min)
+**Prepare questions for the kickoff meeting:**
+
+**Business Context:**
+- What business decision will this analysis inform?
+- What's driving the need for this analysis right now?
+- What's the timeline and why?
+
+**Current State:**
+- How is this currently being tracked (if at all)?
+- What existing reports or metrics exist?
+- What are the known issues or gaps?
+
+**Success Criteria:**
+- What does "done" look like?
+- What format should the deliverable be? (dashboard, deck, report, etc.)
+- Who is the primary audience?
+
+**Scope Boundaries:**
+- What's explicitly IN scope?
+- What's explicitly OUT of scope?
+- Are there any constraints? (time, data, resources)
+
+---
+
+### Step 3: Set Up Project Folder (15 min)
+**Create organized workspace:**
+
+```
+/Project_Name/
+├── /data_sources/        # Raw data extracts
+├── /code/                # Scripts and analysis code
+├── /documentation/       # Requirements, notes, charter
+├── /deliverables/        # Final outputs
+└── /work_in_progress/    # Drafts and iterations
+```
+
+- [ ] Create folder structure
+- [ ] Start a running notes document
+- [ ] Create a simple timeline tracker (even just in Excel)
+
+---
+
+### Step 4: Review the Project Checklist (15 min)
+**Print and prepare:**
+
+- [ ] Print the `Project_Checklist_Print.txt`
+- [ ] Put it somewhere visible at your desk
+- [ ] Skim through it to know what's coming
+
+---
+
+## Afternoon: Kickoff Meeting & Charter Draft (2-3 hours)
+
+### Step 5: Run the Kickoff Meeting (60 min)
+**This is THE most important meeting of the project.**
+
+**Meeting Agenda (share this beforehand):**
+1. Context & Background (10 min)
+2. Business Question & Decision (15 min)
+3. Deliverable Format & Audience (15 min)
+4. Scope & Timeline (10 min)
+5. Next Steps & Open Questions (10 min)
+
+**Critical Questions to Ask:**
+
+📋 **On the Business Question:**
+- "What decision will this analysis inform?"
+- "What happens if we find X? What about Y?"
+- "Is there a hypothesis we're testing?"
+
+📋 **On the Deliverable:**
+- "Can you show me an example of what 'good' looks like?"
+- "Is this a one-time analysis or recurring?"
+- "What format works best? (PowerPoint, dashboard, Excel, etc.)"
+
+📋 **On Success:**
+- "How will we know this project was successful?"
+- "What would make this analysis not useful?"
+
+📋 **On Scope:**
+- "What's the minimum viable version of this?"
+- "What should we explicitly NOT include?"
+- "If we run out of time, what's the priority?"
+
+**Take detailed notes** and confirm understanding verbally.
+
+---
+
+### Step 6: Draft the Project Charter (90 min)
+**Immediately after the kickoff, while it's fresh:**
+
+Create a simple 1-2 page document with:
+
+#### **PROJECT CHARTER TEMPLATE:**
+
+```markdown
+# [Project Name] - Project Charter
+
+**Date:** [Today's date]
+**Analyst:** [Your name]
+**Sponsor:** [Stakeholder name]
+**Due Date:** [Target date]
+
+---
+
+## Business Question
+[One sentence: What business question are we answering?]
+
+## Decision to Inform
+[What decision will be made based on this analysis?]
+
+## Background & Context
+- Why now? [What's driving the need?]
+- Current state: [How is this tracked today?]
+- Known issues: [What gaps exist?]
+
+## Scope
+**In Scope:**
+- [Specific item 1]
+- [Specific item 2]
+- [Specific item 3]
+
+**Out of Scope:**
+- [Specific item 1]
+- [Specific item 2]
+
+## Deliverable
+**Format:** [PowerPoint deck / Excel workbook / Dashboard / Report]
+**Audience:** [Primary audience + secondary audiences]
+**Key Components:**
+- [Required element 1]
+- [Required element 2]
+- [Required element 3]
+
+## Success Criteria
+This project is successful if:
+1. [Criterion 1]
+2. [Criterion 2]
+3. [Criterion 3]
+
+## Timeline
+- Week 1: [Milestone]
+- Week 2: [Milestone]
+- Week 3: [Milestone]
+- Week 4: [Final delivery]
+
+## Key Metrics (Initial List)
+- [Metric 1]: [Brief definition]
+- [Metric 2]: [Brief definition]
+- [Metric 3]: [Brief definition]
+
+## Data Sources (Preliminary)
+- [Source 1]: [What it contains]
+- [Source 2]: [What it contains]
+
+## Open Questions
+1. [Question 1]
+2. [Question 2]
+3. [Question 3]
+
+## Next Steps
+- [ ] [Action item 1 - Owner - Due date]
+- [ ] [Action item 2 - Owner - Due date]
+```
+
+**Email this draft to your sponsor** with:
+> "Here's my understanding of the project based on our kickoff. Please review and let me know if I've captured everything correctly. I'll wait for your confirmation before diving into the analysis."
+
+---
+
+## End of Day 1: Checkpoint
+
+**Before you leave:**
+- [ ] Project charter drafted and sent to sponsor
+- [ ] Notes from kickoff documented
+- [ ] Open questions listed
+- [ ] No code written yet (this is correct!)
+
+**Ask yourself:**
+- Can I explain the business question in one sentence?
+- Do I know what the final deliverable looks like?
+- Do I understand why this matters to the business?
+
+If you answered "no" to any of these, **schedule a follow-up** with your sponsor tomorrow.
+
+---
+
+# 📅 DAY 2: REQUIREMENTS & MOCKUP
+
+**Goal:** Lock down exactly what you're building before you build it.
+
+**Time:** 4-6 hours  
+**Rule:** Still no coding. You're defining success.
+
+---
+
+## Morning: Metrics Dictionary & Data Mapping (2-3 hours)
+
+### Step 7: Create Metrics Dictionary (90 min)
+**For every metric in your analysis, document:**
+
+#### **METRICS DICTIONARY TEMPLATE:**
+
+```markdown
+# Metrics Dictionary - [Project Name]
+
+## Metric: [Metric Name]
+
+**Business Definition:**
+[Plain English: What does this measure in business terms?]
+
+**Technical Definition:**
+[Formula: How is this calculated?]
+Example: Lien Loss = Vehicle Sale Price - Outstanding Loan Balance
+
+**Data Source:**
+- Table: [table_name]
+- Key Fields: [field1, field2, field3]
+- Refresh Frequency: [Daily / Weekly / Monthly]
+
+**Filters/Exclusions:**
+- [What records are excluded and why?]
+- [Any specific date ranges?]
+- [Any status filters?]
+
+**Known Issues:**
+- [Data quality concerns]
+- [Timing delays]
+- [Nulls or missing data]
+
+**Validation:**
+- Expected Range: [What's reasonable?]
+- Validation Source: [How can we check this?]
+- Last Known Value: [From existing reports]
+
+**Business Rules:**
+- [When does this metric get calculated?]
+- [Are there any special cases?]
+- [How should ties or nulls be handled?]
+
+---
+```
+
+**For each metric, answer:**
+- [ ] Is the calculation clear and unambiguous?
+- [ ] Do I know where every field comes from?
+- [ ] Can I validate this against something?
+- [ ] What happens with nulls or missing data?
+
+**Get this reviewed by:**
+- Someone who knows the business rules
+- Someone who knows the data
+
+---
+
+### Step 8: Map Your Data Sources (60 min)
+**Create a simple data lineage map:**
+
+```
+Source System → Extract → Transformation → Final Metric
+```
+
+**Document:**
+- [ ] What tables/files do you need?
+- [ ] How do they connect to each other?
+- [ ] What's the grain of each source? (customer, account, transaction, etc.)
+- [ ] Are there any many-to-many joins?
+- [ ] What's the data latency? (how current is it?)
+
+**Red flags to watch for:**
+- Multiple sources with conflicting data
+- Ambiguous join keys
+- Unclear date fields (as-of dates vs transaction dates)
+- Undocumented tables
+
+---
+
+## Afternoon: Mock Up the Deliverable (2-3 hours)
+
+### Step 9: Create Deliverable Mockup (90 min)
+**This is critical: Mock up what the final deliverable looks like BEFORE building it.**
+
+**If it's a PowerPoint deck:**
+- Sketch out each slide (literally draw boxes and labels)
+- What's on the title page?
+- What's the executive summary slide?
+- What charts/tables are on each slide?
+- What's the call-to-action or recommendation?
+
+**If it's a dashboard:**
+- Draw the layout on paper or in PowerPoint
+- What filters do users need?
+- What metrics are displayed?
+- What visualizations work best?
+
+**If it's an Excel workbook:**
+- What tabs are included?
+- What's on each tab?
+- What formatting/structure?
+
+**If it's a written report:**
+- Outline the sections
+- What's in each section?
+- What exhibits or appendices?
+
+**Use fake data if needed** - the point is to show STRUCTURE, not numbers.
+
+---
+
+### Step 10: Get Stakeholder Approval on Mockup (60 min)
+**Schedule a 30-minute review meeting:**
+
+**Send the mockup to your sponsor with:**
+> "Before I build the analysis, I wanted to confirm the deliverable format. I've mocked up what the final output will look like. Does this match your expectations?"
+
+**In the review meeting, ask:**
+- "Does this format work for your audience?"
+- "Is anything missing?"
+- "Is anything here that you don't need?"
+- "What level of detail is appropriate?"
+
+**Get explicit sign-off:**
+> "Great, I'll build to this format. If the final looks like this mockup with real data, we're good?"
+
+**Update your project charter** with any changes.
+
+---
+
+## End of Day 2: Checkpoint
+
+**Before you leave:**
+- [ ] Metrics dictionary created
+- [ ] Data sources mapped
+- [ ] Deliverable mockup created
+- [ ] Stakeholder has reviewed mockup
+- [ ] Sign-off received (or follow-up scheduled)
+
+**Ask yourself:**
+- Do I have clear definitions for every metric?
+- Do I know exactly what I'm building?
+- Did my sponsor say "yes, build that"?
+
+**Tomorrow you can finally start coding!** But today's work ensures you're building the right thing.
+
+---
+
+# 📅 DAY 3: DATA VALIDATION & PLANNING
+
+**Goal:** Validate your data before building complex analysis.
+
+**Time:** 4-6 hours  
+**Rule:** Today you can start coding, but only for validation.
+
+---
+
+## Morning: Data Quality Checks (2-3 hours)
+
+### Step 11: Pull Sample Data (30 min)
+**Extract small samples from each data source:**
+
+```sql
+-- Example: Pull sample records
+SELECT TOP 100 *
+FROM [your_source_table]
+WHERE [relevant_filter]
+ORDER BY [date_field] DESC
+```
+
+- [ ] Pull data for the most recent complete period
+- [ ] Pull data for a historical period (to compare)
+- [ ] Save samples to your `/data_sources/` folder
+
+---
+
+### Step 12: Run Data Quality Checks (90 min)
+**For each data source, check:**
+
+#### **Completeness:**
+- [ ] Are there null values where there shouldn't be?
+- [ ] Are there missing records? (gaps in dates, missing accounts)
+- [ ] Is the record count reasonable?
+
+```sql
+-- Check for nulls
+SELECT 
+    COUNT(*) as total_records,
+    COUNT(key_field) as non_null_records,
+    COUNT(*) - COUNT(key_field) as null_count
+FROM [table]
+```
+
+#### **Accuracy:**
+- [ ] Do the numbers match published reports?
+- [ ] Are values in expected ranges?
+- [ ] Do calculated fields match source fields?
+
+```sql
+-- Check if calculated field matches
+SELECT 
+    field_a,
+    field_b,
+    field_a + field_b as calculated,
+    field_c as source_calc,
+    CASE WHEN field_a + field_b = field_c THEN 'Match' ELSE 'Mismatch' END as validation
+FROM [table]
+WHERE field_a + field_b <> field_c  -- Show only mismatches
+```
+
+#### **Consistency:**
+- [ ] Do related tables join cleanly?
+- [ ] Are there orphaned records?
+- [ ] Do date ranges align across sources?
+
+```sql
+-- Check join integrity
+SELECT 
+    a.key_field,
+    CASE 
+        WHEN b.key_field IS NULL THEN 'Orphaned'
+        ELSE 'Matched'
+    END as join_status
+FROM table_a a
+LEFT JOIN table_b b ON a.key_field = b.key_field
+```
+
+#### **Timeliness:**
+- [ ] How current is the data?
+- [ ] When was it last refreshed?
+- [ ] Any known lag or delays?
+
+---
+
+### Step 13: Document Data Issues (30 min)
+**Create a data quality log:**
+
+```markdown
+# Data Quality Issues - [Project Name]
+
+## Issue 1: [Description]
+- **Source:** [Table/file name]
+- **Field:** [Specific field]
+- **Issue Type:** [Null / Incorrect / Missing / Inconsistent]
+- **Impact:** [How does this affect analysis?]
+- **Resolution:** [How will we handle this?]
+- **Owner:** [Who's responsible for fix?]
+
+## Issue 2: [Description]
+...
+```
+
+**For each issue, decide:**
+- Can we work around it?
+- Do we need to escalate?
+- Does this block the analysis?
+
+**Communicate issues to your sponsor** if they impact scope or timeline.
+
+---
+
+## Afternoon: Build the Analysis Plan (2-3 hours)
+
+### Step 14: Create Step-by-Step Analysis Plan (90 min)
+**Document your build sequence:**
+
+```markdown
+# Analysis Plan - [Project Name]
+
+## Phase 1: Data Extraction (Week 1)
+- [ ] Extract source A → Save to /data_sources/
+- [ ] Extract source B → Save to /data_sources/
+- [ ] Validate record counts
+
+## Phase 2: Data Preparation (Week 2)
+- [ ] Clean and standardize fields
+- [ ] Join sources on [key]
+- [ ] Apply business rules
+- [ ] Create analytical dataset
+
+## Phase 3: Metric Calculation (Week 2-3)
+- [ ] Calculate metric 1 (see metrics dictionary)
+- [ ] Calculate metric 2
+- [ ] Validate against known values
+
+## Phase 4: Analysis & Insights (Week 3)
+- [ ] Run segmentation analysis
+- [ ] Identify trends or patterns
+- [ ] Generate visualizations
+- [ ] Draft initial insights
+
+## Phase 5: Deliverable Creation (Week 3-4)
+- [ ] Build deliverable (see mockup)
+- [ ] Internal review
+- [ ] Incorporate feedback
+- [ ] Final QA check
+
+## Weekly Check-ins:
+- Week 1: Show data validation results
+- Week 2: Show initial metrics calculated
+- Week 3: Show draft visualizations
+- Week 4: Present final deliverable
+```
+
+---
+
+### Step 15: Set Up Version Control & Documentation (30 min)
+**Establish good habits now:**
+
+- [ ] Create a master README for your code
+- [ ] Document your folder structure
+- [ ] Add comments to your code as you write it
+- [ ] Save code with version numbers or dates
+- [ ] Keep a changelog of major updates
+
+**Create a simple README:**
+```markdown
+# [Project Name] - Code Documentation
+
+## Purpose
+[What does this code do?]
+
+## Data Sources
+- [Source 1]: [Description]
+- [Source 2]: [Description]
+
+## File Structure
+- `01_extract.py` - Pull data from sources
+- `02_clean.py` - Data cleaning and prep
+- `03_analyze.py` - Calculate metrics
+- `04_visualize.py` - Create charts
+
+## How to Run
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+## Last Updated
+[Date] by [Name]
+```
+
+---
+
+### Step 16: Schedule Weekly Check-ins (15 min)
+**Don't wait until the end to show your work:**
+
+- [ ] Schedule 15-30 min check-in for next Monday
+- [ ] Add recurring meeting for following weeks
+- [ ] Send calendar invite to sponsor
+- [ ] Add agenda: "Quick progress update + any blockers"
+
+**Meeting cadence:**
+- Weeks 1-2: 15 minutes
+- Weeks 3-4: 30 minutes (showing more content)
+
+---
+
+## End of Day 3: Checkpoint
+
+**Before you leave:**
+- [ ] Data quality validated (or issues documented)
+- [ ] Analysis plan created
+- [ ] Weekly check-ins scheduled
+- [ ] Code structure set up
+- [ ] Ready to start building tomorrow!
+
+**Ask yourself:**
+- Is my data good enough to build on?
+- Do I have a clear roadmap?
+- Will my stakeholder see my work next week?
+
+---
+
+# ✅ You're Ready to Build!
+
+**Congratulations!** You've completed the critical setup phase. You now have:
+
+✅ Clear business question  
+✅ Signed-off project charter  
+✅ Defined metrics  
+✅ Mockup of final deliverable  
+✅ Validated data sources  
+✅ Step-by-step analysis plan  
+✅ Weekly stakeholder check-ins scheduled  
+
+**Starting Day 4, you can code with confidence** because you know:
+- What you're building
+- Why it matters
+- What success looks like
+- Your data is reliable
+
+---
+
+## 🚦 Red Flags - When to Pause
+
+If any of these happen, STOP and address them:
+
+🚩 **Sponsor hasn't responded to your charter**  
+→ Follow up. Don't proceed without alignment.
+
+🚩 **Metrics definitions are still ambiguous**  
+→ Get clarity. Don't guess.
+
+🚩 **Data quality issues are severe**  
+→ Escalate. Bad data = bad analysis.
+
+🚩 **You're not sure what the final deliverable looks like**  
+→ Create a mockup and get sign-off.
+
+🚩 **You haven't scheduled weekly check-ins**  
+→ Schedule them now. Don't work in isolation.
+
+---
+
+## 📊 Week 1 Checklist Complete
+
+You should have these artifacts after Day 3:
+
+- ✅ Project charter (signed off)
+- ✅ Metrics dictionary
+- ✅ Data lineage map
+- ✅ Deliverable mockup (approved)
+- ✅ Data quality report
+- ✅ Analysis plan
+- ✅ Weekly meetings scheduled
+
+**If any of these are missing, complete them before moving to Week 2.**
+
+---
+
+## 🎯 Next Steps
+
+**Day 4 and Beyond:**
+1. Follow your analysis plan step-by-step
+2. Show work-in-progress at Monday check-ins
+3. Reference the full `Analytics_Project_Framework.md` as needed
+4. Keep your `Project_Checklist_Print.txt` visible
+5. Watch for red flags in `Common_Pitfalls_and_Lessons.md`
+
+**Remember:**
+- Progress over perfection
+- Show work early and often
+- When stuck, refer back to your charter
+- Communicate blockers immediately
+
+---
+
+**You've got this! 🚀**
+
+*Now go build something great. And remember: the best analysis gets used, not the one that's perfect.*
