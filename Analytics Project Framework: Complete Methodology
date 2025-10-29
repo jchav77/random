@@ -1,0 +1,2418 @@
+# Analytics Project Framework: Complete Methodology
+
+## 📖 Document Overview
+
+**Purpose:** Comprehensive guide for leading analytics projects from kickoff to delivery
+
+**Audience:** Analytics professionals managing end-to-end data analysis projects
+
+**Length:** ~27 pages covering 5 phases with templates and examples
+
+**When to Use:** Reference throughout your project for detailed guidance on each phase
+
+---
+
+## Table of Contents
+
+1. [Introduction & Framework Overview](#introduction)
+2. [Phase 1: Discover](#phase-1-discover)
+3. [Phase 2: Define](#phase-2-define)
+4. [Phase 3: Develop](#phase-3-develop)
+5. [Phase 4: Deliver](#phase-4-deliver)
+6. [Phase 5: Document](#phase-5-document)
+7. [Templates & Checklists](#templates)
+8. [Troubleshooting Guide](#troubleshooting)
+
+---
+
+# Introduction & Framework Overview {#introduction}
+
+## Why This Framework Exists
+
+Analytics projects fail for predictable reasons:
+- Requirements are unclear or change mid-project
+- Data quality issues discovered too late
+- Stakeholders see the final product for the first time at delivery
+- Analysis answers the wrong business question
+- Projects take 2-3x longer than estimated
+
+**This framework prevents these failures** through structured phases, clear checkpoints, and stakeholder alignment.
+
+---
+
+## Framework Philosophy
+
+### Core Principles
+
+**1. Front-Load the Thinking, Back-Load the Building**
+Spend more time understanding the problem than solving it. Get clear on requirements before writing code.
+
+**2. Show Work-in-Progress Early and Often**
+Don't work in isolation. Weekly check-ins starting Week 1 prevent costly surprises.
+
+**3. Build Trust Through Transparency**
+Be honest about data limitations, timeline risks, and scope challenges. Stakeholders appreciate honesty.
+
+**4. Perfect Is the Enemy of Done**
+Deliver 80% of the value quickly, then iterate. Don't chase perfection while missing deadlines.
+
+**5. Document for Your Future Self**
+Write documentation as if you'll forget everything in 6 months. Because you will.
+
+---
+
+## The 5 Phases
+
+```
+DISCOVER          DEFINE            DEVELOP           DELIVER           DOCUMENT
+(Week 1)          (Week 1-2)        (Week 2-4)        (Week 4-5)        (Week 5)
+    │                 │                 │                 │                 │
+    ├─ Context        ├─ Metrics        ├─ Build          ├─ Present        ├─ Lessons
+    ├─ Kickoff        ├─ Mockup         ├─ Iterate        ├─ Feedback       ├─ Code docs
+    ├─ Charter        ├─ Validate       ├─ Check-ins      ├─ Polish         ├─ Runbook
+    └─ Research       └─ Sign-off       └─ Document       └─ Action items   └─ Transfer
+```
+
+**Timeline:** 4-5 weeks for typical project (adjust based on complexity)
+
+---
+
+## Success Factors
+
+Your project is set up for success when:
+- ✅ Business question is clear and documented
+- ✅ Stakeholder sees work-in-progress weekly
+- ✅ Data is validated before building complex logic
+- ✅ Deliverable format is agreed upon upfront
+- ✅ Scope and timeline are realistic and communicated
+
+**If any of these are missing, your project is at risk.**
+
+---
+
+# Phase 1: Discover {#phase-1-discover}
+
+**Duration:** Day 1-3 (1 week)
+
+**Goal:** Understand the business question and context before touching data
+
+**Key Output:** Signed project charter
+
+**Rule:** No coding during this phase
+
+---
+
+## Why Discovery Matters
+
+**Common mistake:** Start coding on Day 1 to "make progress"
+
+**Reality:** You can code very quickly in the wrong direction. Spending 2 days on discovery saves 2+ weeks of rework.
+
+**ROI:** 10 hours of discovery saves 40 hours of rework
+
+---
+
+## Discovery Activities
+
+### 1. Pre-Kickoff Research
+
+**Before meeting with your sponsor, get smart on the topic:**
+
+#### Background Research (60-90 min)
+- [ ] Search email for previous discussions on this topic
+- [ ] Review existing reports or dashboards
+- [ ] Read relevant policies, procedures, documentation
+- [ ] Check if similar analysis has been done before
+- [ ] Look up unfamiliar terms, acronyms, systems
+
+**Ask yourself:**
+- What's the business context?
+- Why is this needed now?
+- Who are the stakeholders?
+- What do I not understand yet?
+
+---
+
+#### Draft Questions for Kickoff (30 min)
+
+**Prepare questions in 4 categories:**
+
+**Business Context:**
+- What business decision will this analysis inform?
+- What's driving the need for this analysis right now?
+- What's the timeline and why does it matter?
+- Who will use this analysis?
+
+**Current State:**
+- How is this currently being tracked (if at all)?
+- What existing reports or metrics exist?
+- What are the known issues or gaps?
+- What's been tried before?
+
+**Success Criteria:**
+- What does "done" look like?
+- How will we know this project was successful?
+- What format should the deliverable be?
+- What would make this analysis not useful?
+
+**Scope Boundaries:**
+- What's explicitly IN scope?
+- What's explicitly OUT of scope?
+- Are there any constraints? (time, data, resources, systems)
+- If we run out of time, what's the priority?
+
+**Pro tip:** Email these questions to your sponsor before the meeting so they can prepare.
+
+---
+
+### 2. Kickoff Meeting
+
+**Duration:** 60 minutes
+
+**Attendees:** You + Project Sponsor (+ other key stakeholders if appropriate)
+
+**Your job:** Listen more than you talk. Take detailed notes. Ask clarifying questions.
+
+---
+
+#### Meeting Agenda (Share This Beforehand)
+
+**1. Context & Background (10 min)**
+- Sponsor explains the situation
+- What's happening and why it matters
+- History or previous attempts
+
+**2. Business Question & Decision (15 min)**
+- What specific question are we answering?
+- What decision will be made based on this?
+- What happens if we find X? What about Y?
+- Is there a hypothesis we're testing?
+
+**3. Deliverable Format & Audience (15 min)**
+- Who is the primary audience?
+- What format works best? (deck, dashboard, Excel, report)
+- Can you show me an example of "good"?
+- Is this one-time or recurring?
+- What level of detail is appropriate?
+
+**4. Scope & Timeline (10 min)**
+- What must be included?
+- What should explicitly NOT be included?
+- What's the deadline and why?
+- What's the minimum viable version?
+
+**5. Next Steps & Open Questions (10 min)**
+- What do I need access to?
+- Who else should I talk to?
+- What blockers do you anticipate?
+- When should we check in next?
+
+---
+
+#### Critical Questions to Ask
+
+**On Business Impact:**
+> "If this analysis shows [X], what would you do differently?"
+>
+> "What's the cost of not having this analysis?"
+
+**On Deliverable:**
+> "Can you show me what 'good' looks like? Any examples?"
+>
+> "What's more important: speed or comprehensiveness?"
+
+**On Scope:**
+> "If we had to cut something, what would it be?"
+>
+> "What are we explicitly NOT analyzing?"
+
+**On Success:**
+> "How will you use this analysis?"
+>
+> "What would disappoint you about the final product?"
+
+**Take verbatim notes** when they describe what they want. Read it back to confirm understanding.
+
+---
+
+### 3. Project Charter
+
+**Duration:** 90 minutes (draft immediately after kickoff while fresh)
+
+**Purpose:** Document requirements and get sign-off before building
+
+**Format:** 1-2 page document
+
+---
+
+#### Project Charter Template
+
+```markdown
+# [Project Name] - Project Charter
+
+**Date:** [Today's date]
+**Analyst:** [Your name]
+**Sponsor:** [Stakeholder name & title]
+**Due Date:** [Target delivery date]
+**Status:** Draft / Approved / In Progress
+
+---
+
+## Executive Summary
+[2-3 sentences: What is this project and why does it matter?]
+
+---
+
+## Business Question
+[One clear sentence: What business question are we answering?]
+
+Example: "Which vendor characteristics are associated with higher recovery rates?"
+
+---
+
+## Decision to Inform
+[What specific decision or action will be taken based on this analysis?]
+
+Example: "Determine whether to adjust vendor allocation strategy for next quarter."
+
+---
+
+## Background & Context
+
+**Why Now?**
+[What's driving the need for this analysis right now?]
+
+**Current State:**
+[How is this currently tracked or handled?]
+
+**Known Issues:**
+[What gaps or problems exist today?]
+
+**Previous Work:**
+[Has anything similar been done before? What were the results?]
+
+---
+
+## Scope
+
+### In Scope:
+- [Specific item 1: e.g., "Analysis of vendor performance across all regions"]
+- [Specific item 2: e.g., "Last 12 months of data (Jan-Dec 2024)"]
+- [Specific item 3: e.g., "Top 20 vendors by volume"]
+
+### Out of Scope:
+- [Specific item 1: e.g., "Historical analysis beyond 12 months"]
+- [Specific item 2: e.g., "Vendor cost analysis"]
+- [Specific item 3: e.g., "Implementation of recommendations"]
+
+---
+
+## Deliverable
+
+**Format:** [PowerPoint deck / Excel workbook / Dashboard / Report]
+
+**Audience:**
+- Primary: [Job title and how they'll use it]
+- Secondary: [Others who will see it]
+
+**Key Components:**
+- [Required element 1: e.g., "Executive summary (1 page)"]
+- [Required element 2: e.g., "Vendor performance scorecard"]
+- [Required element 3: e.g., "Recommendations with supporting data"]
+
+**Example or Template:**
+[Attach mockup or reference to similar deliverable]
+
+---
+
+## Success Criteria
+
+This project is successful if:
+1. [Criterion 1: e.g., "Analysis is completed by deadline"]
+2. [Criterion 2: e.g., "Findings inform Q1 vendor allocation decision"]
+3. [Criterion 3: e.g., "Sponsor says 'This answered my question'"]
+
+---
+
+## Key Metrics (Initial List)
+
+| Metric | Definition | Source |
+|--------|------------|--------|
+| [Metric 1] | [Brief definition] | [Table/system] |
+| [Metric 2] | [Brief definition] | [Table/system] |
+| [Metric 3] | [Brief definition] | [Table/system] |
+
+*Detailed definitions to be documented in metrics dictionary*
+
+---
+
+## Data Sources (Preliminary)
+
+| Source | Contents | Access | Refresh Frequency |
+|--------|----------|--------|-------------------|
+| [Source 1] | [What it contains] | [How to access] | [Daily/Weekly/Monthly] |
+| [Source 2] | [What it contains] | [How to access] | [Daily/Weekly/Monthly] |
+
+---
+
+## Timeline
+
+| Week | Milestone | Deliverable |
+|------|-----------|-------------|
+| Week 1 | Requirements & validation | Signed charter, validated data |
+| Week 2 | Initial analysis | Working prototype |
+| Week 3 | Iterate and refine | Draft deliverable |
+| Week 4 | Finalize and present | Final analysis |
+| Week 5 | Document and close | Documentation & handoff |
+
+---
+
+## Stakeholders
+
+| Name | Role | Involvement |
+|------|------|-------------|
+| [Name] | Sponsor | Final approver, weekly check-ins |
+| [Name] | Subject matter expert | Validate business rules |
+| [Name] | Data owner | Provide data access |
+| [Name] | End user | Feedback on deliverable format |
+
+---
+
+## Assumptions
+
+- [Assumption 1: e.g., "Data is available and accessible"]
+- [Assumption 2: e.g., "Business rules are documented"]
+- [Assumption 3: e.g., "Sponsor available for weekly check-ins"]
+
+---
+
+## Risks & Mitigation
+
+| Risk | Probability | Impact | Mitigation |
+|------|-------------|--------|------------|
+| [Risk 1] | [High/Med/Low] | [High/Med/Low] | [How we'll address] |
+| [Risk 2] | [High/Med/Low] | [High/Med/Low] | [How we'll address] |
+
+---
+
+## Open Questions
+
+1. [Question 1 - Owner - Target resolution date]
+2. [Question 2 - Owner - Target resolution date]
+3. [Question 3 - Owner - Target resolution date]
+
+---
+
+## Next Steps
+
+- [ ] [Action item 1 - Owner - Due date]
+- [ ] [Action item 2 - Owner - Due date]
+- [ ] [Action item 3 - Owner - Due date]
+
+---
+
+## Approval
+
+**Analyst Signature:** _____________________ Date: _________
+
+**Sponsor Signature:** _____________________ Date: _________
+
+---
+```
+
+---
+
+#### How to Use the Charter
+
+**1. Draft immediately after kickoff** (while details are fresh)
+
+**2. Email to sponsor within 24 hours:**
+
+> Subject: [Project Name] - Project Charter for Review
+>
+> Hi [Name],
+>
+> Thanks for the kickoff meeting today. I've drafted this project charter based on our discussion. Please review and let me know if I've captured everything correctly.
+>
+> Key areas to confirm:
+> - Business question (page 1)
+> - Scope (what's in/out on page 2)
+> - Deliverable format (page 2)
+> - Timeline (page 3)
+>
+> I'll wait for your confirmation before diving into the analysis.
+>
+> [Your name]
+
+**3. Iterate based on feedback** (expect 1-2 revisions)
+
+**4. Get sign-off** (email confirmation or signature)
+
+**5. Reference throughout project** (when scope creeps or questions arise)
+
+---
+
+## Discovery Phase Checkpoint
+
+**Before moving to Phase 2, you must have:**
+
+✅ Project charter drafted and sent to sponsor  
+✅ Business question clearly defined  
+✅ Deliverable format and audience identified  
+✅ Scope boundaries documented  
+✅ Timeline agreed upon  
+✅ No code written yet (this is correct!)  
+
+**Red flag:** If your sponsor hasn't responded to your charter by Day 3, follow up. Don't proceed without alignment.
+
+---
+
+# Phase 2: Define {#phase-2-define}
+
+**Duration:** Day 3-10 (overlaps with end of Week 1, into Week 2)
+
+**Goal:** Define exactly what you're building before you build it
+
+**Key Outputs:** Metrics dictionary, deliverable mockup, data validation plan
+
+**Rule:** No complex analysis until definitions are locked down
+
+---
+
+## Why Definition Matters
+
+**Common mistake:** Jump into analysis with vague metrics definitions
+
+**Reality:** "Calculate lien loss" can mean 5 different things. If you don't define it clearly, you'll calculate it 3 different ways and rebuild twice.
+
+**Impact:** Ambiguous definitions cause 50% of analysis rework
+
+---
+
+## Define Activities
+
+### 1. Metrics Dictionary
+
+**Duration:** 2-3 hours
+
+**Purpose:** Crystal-clear definition of every metric in your analysis
+
+---
+
+#### Metrics Dictionary Template
+
+For each metric, document:
+
+```markdown
+# Metrics Dictionary - [Project Name]
+
+---
+
+## Metric: [Metric Name]
+
+**Business Definition:**
+[Plain English explanation: What does this measure in business terms?]
+
+Example: "Lien Loss measures the financial loss when a vehicle is sold for 
+less than the outstanding loan balance after repossession."
+
+---
+
+**Technical Definition:**
+
+**Formula:**
+[Precise calculation with field names]
+
+Example: 
+```
+Lien Loss = MAX(0, Outstanding Loan Balance - Vehicle Sale Price)
+```
+
+**Components:**
+- Outstanding Loan Balance: [Definition of how this is calculated]
+- Vehicle Sale Price: [Definition and what it includes]
+
+**Calculation Logic:**
+[Step-by-step logic, including any conditional rules]
+
+Example:
+1. Take the outstanding balance as of repossession date
+2. Take the net vehicle sale price after sale fees
+3. If balance > sale price, calculate the difference
+4. If sale price >= balance, lien loss = 0
+
+---
+
+**Data Source:**
+
+**Primary Table/System:** [Name of table or system]
+
+**Key Fields:**
+- Field 1: `[table].[field_name]` - [Description]
+- Field 2: `[table].[field_name]` - [Description]
+
+**Join Logic:**
+[If multiple tables, how do they connect?]
+
+**Data Refresh:** [Daily / Weekly / Monthly / Real-time]
+
+**Historical Availability:** [How far back does data go?]
+
+---
+
+**Filters & Business Rules:**
+
+**Include:**
+- [Rule 1: e.g., "Only completed sales with sale date populated"]
+- [Rule 2: e.g., "Exclude sales flagged as 'test' or 'void'"]
+
+**Exclude:**
+- [Rule 1: e.g., "Exclude accounts in bankruptcy status"]
+- [Rule 2: e.g., "Exclude sales outside normal date range"]
+
+**Special Cases:**
+- [Case 1: How to handle nulls]
+- [Case 2: How to handle negative values]
+- [Case 3: How to handle ties or duplicates]
+
+---
+
+**Validation:**
+
+**Expected Range:**
+[What values are reasonable? What would be a red flag?]
+
+Example: "Typical lien loss ranges from $500 to $15,000. Values above 
+$25,000 should be investigated as potential data errors."
+
+**Validation Source:**
+[How can we verify this metric is calculated correctly?]
+
+Example: "Compare total lien loss to Finance's monthly report. Should match 
+within 2% due to timing differences."
+
+**Last Known Value:**
+[If this metric is tracked elsewhere, what was it last period?]
+
+Example: "Q3 2024 total lien loss was $2.3M per Finance report."
+
+**Validation Query:**
+```sql
+-- Sample validation query
+SELECT 
+    COUNT(*) as record_count,
+    SUM([metric]) as total,
+    AVG([metric]) as average,
+    MIN([metric]) as minimum,
+    MAX([metric]) as maximum
+FROM [source_table]
+WHERE [filters]
+```
+
+---
+
+**Known Issues:**
+
+**Data Quality:**
+- [Issue 1: e.g., "Sale prices sometimes null for recent sales"]
+- [Issue 2: e.g., "Outstanding balance may not reflect recent payments"]
+
+**Timing:**
+- [Issue 1: e.g., "Sale data has 2-day lag"]
+- [Issue 2: e.g., "Month-end reports may have incomplete data"]
+
+**Resolution:**
+[How we're handling these issues]
+
+---
+
+**Change History:**
+
+| Date | Change | Reason | Changed By |
+|------|--------|--------|------------|
+| [Date] | [What changed] | [Why] | [Name] |
+
+---
+
+**Questions & Clarifications:**
+
+| Question | Answer | Answered By | Date |
+|----------|--------|-------------|------|
+| [Question] | [Answer] | [Name] | [Date] |
+
+---
+```
+
+---
+
+#### Best Practices for Metrics Dictionary
+
+**1. Be Precise**
+- "Revenue" is vague. "Total invoiced revenue, net of credits, in USD" is precise.
+- "Recent sales" is vague. "Sales completed within last 90 days" is precise.
+
+**2. Include Examples**
+- Show a sample calculation with real (or realistic) numbers
+- Walk through the logic step-by-step
+
+**3. Document the "Why"**
+- Explain why certain business rules exist
+- Note why certain records are excluded
+
+**4. Get Subject Matter Expert Review**
+- Have someone who knows the business validate definitions
+- Have someone who knows the data validate sources
+
+**5. Version Control**
+- Date your definitions
+- Track changes over time
+- Note why definitions changed
+
+---
+
+#### Common Pitfalls to Avoid
+
+❌ **Assuming everyone knows what a metric means**
+✅ Define it explicitly, even if it seems obvious
+
+❌ **Multiple definitions of the same metric**
+✅ One metric = one definition, used consistently
+
+❌ **Vague data sources** ("It's in the database somewhere")
+✅ Specific table, specific fields, specific joins
+
+❌ **No validation plan** ("We'll check it looks reasonable")
+✅ Concrete validation: compare to known values
+
+---
+
+### 2. Deliverable Mockup
+
+**Duration:** 90 minutes
+
+**Purpose:** Show stakeholder what the final product will look like BEFORE building it
+
+**Critical Success Factor:** Get stakeholder approval on the mockup before you start coding
+
+---
+
+#### Why Mockups Matter
+
+**Scenario without mockup:**
+- Week 1-3: Build detailed analysis in Excel
+- Week 4: Show stakeholder
+- Stakeholder: "Oh, I need this in PowerPoint"
+- Week 4-5: Rebuild everything in PowerPoint
+- **Result:** 2+ weeks of wasted effort
+
+**Scenario with mockup:**
+- Day 2: Sketch PowerPoint layout
+- Day 3: Stakeholder: "Perfect, build that"
+- Week 1-3: Build directly in PowerPoint format
+- Week 4: Present final
+- **Result:** Built right the first time
+
+---
+
+#### How to Create a Mockup
+
+**Option 1: PowerPoint Sketch**
+
+Create a rough PowerPoint with:
+- Title slide (shows project name)
+- Executive summary slide (shows what the answer will look like)
+- 3-5 analysis slides (shows chart placeholders with titles)
+- Recommendation slide (shows what action items will look like)
+
+**Use fake data or boxes** - the point is STRUCTURE, not numbers
+
+Example slide titles:
+- "Key Findings: Top 3 Insights"
+- "Vendor Performance: Recovery Rate by Region"
+- "Trend Analysis: 12-Month Performance"
+- "Recommendations: Proposed Actions"
+
+---
+
+**Option 2: Dashboard Wireframe**
+
+Sketch the dashboard layout on paper or in PowerPoint:
+- Where do filters go?
+- What metrics are displayed?
+- What charts/visualizations?
+- What level of drill-down?
+
+Example elements:
+```
+┌─────────────────────────────────────────────────┐
+│ DASHBOARD TITLE                                 │
+├─────────────────────────────────────────────────┤
+│ Filters: [Date Range] [Region] [Vendor]        │
+├─────────────────────────────────────────────────┤
+│ ┌───────────┐ ┌───────────┐ ┌───────────┐     │
+│ │ Metric 1  │ │ Metric 2  │ │ Metric 3  │     │
+│ │ $X.XM     │ │ XX%       │ │ XXX       │     │
+│ └───────────┘ └───────────┘ └───────────┘     │
+├─────────────────────────────────────────────────┤
+│ [Bar Chart: Performance by Segment]             │
+│                                                 │
+├─────────────────────────────────────────────────┤
+│ [Line Chart: Trend Over Time]                   │
+│                                                 │
+├─────────────────────────────────────────────────┤
+│ [Table: Detail by Category]                     │
+└─────────────────────────────────────────────────┘
+```
+
+---
+
+**Option 3: Excel Template**
+
+Create an Excel workbook with:
+- Tab 1: Executive Summary (key metrics in a table)
+- Tab 2: Detailed Data (column headers, no data)
+- Tab 3: Charts (placeholder charts)
+- Tab 4: Appendix (supporting info)
+
+**Label everything clearly** even with fake data
+
+---
+
+#### Stakeholder Review of Mockup
+
+**Schedule a 30-minute review** with your sponsor
+
+**Send the mockup ahead of time:**
+
+> Subject: [Project Name] - Deliverable Mockup for Review
+>
+> Hi [Name],
+>
+> Before I build the full analysis, I wanted to confirm the deliverable 
+> format. I've mocked up what the final output will look like (attached).
+>
+> This shows the structure and content, but with placeholder data.
+>
+> In our 30-min meeting, I'd like to confirm:
+> 1. Does this format work for your audience?
+> 2. Is anything missing?
+> 3. Is anything here that you don't need?
+> 4. What level of detail is appropriate?
+>
+> If the final deliverable looks like this mockup (with real data), 
+> are we good?
+>
+> [Your name]
+
+---
+
+**In the review meeting, ask:**
+
+> "Does this match your expectations?"
+>
+> "Is this the right format for your audience?"
+>
+> "What would you add or remove?"
+>
+> "What level of detail do you want in [specific section]?"
+>
+> "If the final looks like this with real data, we're aligned?"
+
+**Take notes on changes** and update the mockup
+
+**Get explicit confirmation:**
+> "Great, I'll build to this format. If any major changes are needed, please let me know in the next 2 days, otherwise I'll proceed with this structure."
+
+---
+
+### 3. Data Validation Plan
+
+**Duration:** 2 hours
+
+**Purpose:** Verify data quality before building complex analysis
+
+**Principle:** Trust, but verify
+
+---
+
+#### Data Validation Checklist
+
+For each data source, check:
+
+**✅ Completeness**
+- [ ] Are there nulls where there shouldn't be?
+- [ ] Are there missing records? (gaps in dates, missing accounts)
+- [ ] Is record count reasonable vs expectations?
+- [ ] Are all expected columns present?
+
+**✅ Accuracy**
+- [ ] Do numbers match published reports?
+- [ ] Are values in expected ranges?
+- [ ] Do calculated fields match source fields?
+- [ ] Do totals reconcile?
+
+**✅ Consistency**
+- [ ] Do related tables join cleanly?
+- [ ] Are there orphaned records?
+- [ ] Do date ranges align across sources?
+- [ ] Are data types consistent?
+
+**✅ Timeliness**
+- [ ] How current is the data?
+- [ ] When was it last refreshed?
+- [ ] Is there expected lag?
+- [ ] Are there delayed updates?
+
+**✅ Uniqueness**
+- [ ] Is the primary key truly unique?
+- [ ] Are there unexpected duplicates?
+- [ ] How should duplicates be handled?
+
+---
+
+#### Sample Validation Queries
+
+```sql
+-- COMPLETENESS: Check for nulls in key fields
+SELECT 
+    COUNT(*) as total_records,
+    COUNT(key_field_1) as non_null_field_1,
+    COUNT(key_field_2) as non_null_field_2,
+    COUNT(*) - COUNT(key_field_1) as null_count_field_1,
+    (COUNT(*) - COUNT(key_field_1)) * 1.0 / COUNT(*) as null_percent_field_1
+FROM [table]
+WHERE [relevant_filter];
+
+-- ACCURACY: Compare calculated vs source field
+SELECT 
+    field_a,
+    field_b,
+    field_c as source_calculated,
+    (field_a + field_b) as our_calculated,
+    (field_a + field_b) - field_c as difference,
+    CASE 
+        WHEN ABS((field_a + field_b) - field_c) > 0.01 THEN 'MISMATCH' 
+        ELSE 'Match' 
+    END as status
+FROM [table]
+WHERE ABS((field_a + field_b) - field_c) > 0.01  -- Show only mismatches
+LIMIT 100;
+
+-- CONSISTENCY: Check join integrity
+SELECT 
+    'Table A only' as status,
+    COUNT(*) as count
+FROM table_a a
+LEFT JOIN table_b b ON a.key_field = b.key_field
+WHERE b.key_field IS NULL
+
+UNION ALL
+
+SELECT 
+    'Table B only' as status,
+    COUNT(*) as count
+FROM table_b b
+LEFT JOIN table_a a ON b.key_field = a.key_field
+WHERE a.key_field IS NULL
+
+UNION ALL
+
+SELECT 
+    'Matched' as status,
+    COUNT(*) as count
+FROM table_a a
+INNER JOIN table_b b ON a.key_field = b.key_field;
+
+-- TIMELINESS: Check data freshness
+SELECT 
+    MAX(date_field) as most_recent_date,
+    MIN(date_field) as oldest_date,
+    DATEDIFF(day, MAX(date_field), GETDATE()) as days_since_last_update,
+    COUNT(DISTINCT date_field) as unique_dates
+FROM [table];
+
+-- UNIQUENESS: Check for duplicates
+SELECT 
+    key_field,
+    COUNT(*) as occurrence_count
+FROM [table]
+GROUP BY key_field
+HAVING COUNT(*) > 1
+ORDER BY COUNT(*) DESC
+LIMIT 100;
+
+-- RANGE CHECK: Identify outliers
+SELECT 
+    metric_field,
+    COUNT(*) as count,
+    MIN(value_field) as min_value,
+    MAX(value_field) as max_value,
+    AVG(value_field) as avg_value,
+    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY value_field) as median
+FROM [table]
+GROUP BY metric_field;
+```
+
+---
+
+#### Data Quality Issues Log
+
+**Create a tracking document:**
+
+```markdown
+# Data Quality Issues - [Project Name]
+
+---
+
+## Issue #1: [Short Description]
+
+**Source:** [Table/File name]
+**Field:** [Specific field(s)]
+**Issue Type:** [Null / Incorrect / Missing / Inconsistent / Duplicate]
+**Discovery Date:** [Date found]
+
+**Description:**
+[Detailed description of the issue]
+
+**Impact:**
+[How does this affect the analysis?]
+- Impact on metrics: [Which metrics affected?]
+- Impact on scope: [Can we still meet requirements?]
+- Impact on timeline: [Delays needed?]
+
+**Root Cause:**
+[Why is this happening? If known]
+
+**Resolution:**
+[How we're handling it]
+- Option 1: [Approach and pros/cons]
+- Option 2: [Approach and pros/cons]
+- **Selected Approach:** [What we're doing]
+
+**Workaround:**
+[Temporary solution if full fix not possible]
+
+**Owner:** [Who's responsible for resolution?]
+**Target Date:** [When should this be resolved?]
+**Status:** [Open / In Progress / Resolved]
+
+---
+```
+
+**For each issue, decide:**
+- Can we work around it?
+- Do we need to escalate?
+- Does this block the analysis?
+- Should scope or timeline be adjusted?
+
+---
+
+## Define Phase Checkpoint
+
+**Before moving to Phase 3, you must have:**
+
+✅ Metrics dictionary with clear definitions  
+✅ Data sources identified and mapped  
+✅ Deliverable mockup created  
+✅ Stakeholder approval on mockup  
+✅ Data quality validated (or issues documented)  
+✅ Analysis plan created  
+
+**Red flag:** If metrics definitions are still ambiguous, or stakeholder hasn't approved mockup, STOP. Get clarity before building.
+
+---
+
+# Phase 3: Develop {#phase-3-develop}
+
+**Duration:** Week 2-4
+
+**Goal:** Build the analysis iteratively with weekly stakeholder check-ins
+
+**Key Outputs:** Working analysis, draft deliverable
+
+**Rule:** Show work-in-progress weekly, incorporate feedback early
+
+---
+
+## Why Iterative Development Matters
+
+**Common mistake:** Work in isolation for 3 weeks, then present finished product
+
+**Reality:** Your stakeholder's needs often evolve as they see preliminary results. Showing work early allows for course correction before you've invested too much time.
+
+**Impact:** Weekly check-ins reduce end-of-project rework by 70%
+
+---
+
+## Develop Activities
+
+### 1. Weekly Check-in Cadence
+
+**Schedule:** Every Monday (or consistent day), 15-30 minutes
+
+**Purpose:** Show progress, get feedback, identify blockers
+
+---
+
+#### Check-in Agenda Template
+
+**Week 2 Check-in (15 min)**
+- (5 min) What I've completed:
+  - Data extracted and validated
+  - Preliminary metrics calculated
+  - Any data quality issues discovered
+  
+- (5 min) Show work-in-progress:
+  - Sample of data (if appropriate)
+  - Initial metric calculations
+  - Any surprising findings so far
+
+- (5 min) Next steps & blockers:
+  - What I'm working on this week
+  - Any questions or decisions needed
+  - Timeline still on track?
+
+---
+
+**Week 3 Check-in (30 min)**
+- (5 min) Progress update:
+  - Analysis components completed
+  - Draft visualizations created
+  
+- (15 min) Show draft deliverable:
+  - Walk through preliminary slides/dashboard
+  - Highlight key findings (even if not finalized)
+  - Get feedback on format, level of detail
+
+- (10 min) Open items:
+  - What needs refinement?
+  - Any changes to scope or direction?
+  - Confirm delivery timeline
+
+---
+
+**Week 4 Check-in (30 min)**
+- (10 min) Review near-final deliverable
+- (15 min) Discuss findings and implications
+- (5 min) Plan for final presentation
+
+---
+
+#### Best Practices for Check-ins
+
+**DO:**
+- ✅ Show actual work (even if rough)
+- ✅ Be transparent about challenges
+- ✅ Ask for specific feedback
+- ✅ Take notes on requested changes
+- ✅ Confirm priorities if scope adjusts
+
+**DON'T:**
+- ❌ Just give status update without showing work
+- ❌ Wait until it's "perfect" to share
+- ❌ Surprise stakeholder with new findings at end
+- ❌ Ignore feedback and keep building
+
+**Template email for check-in:**
+
+> Subject: [Project Name] - Week [X] Check-in
+>
+> Hi [Name],
+>
+> Quick agenda for Monday's 15-min check-in:
+> 1. Show you preliminary [metrics/charts/draft]
+> 2. Get your feedback on [specific element]
+> 3. Confirm we're on track for [deadline]
+>
+> I'll share the draft 30 min before our call so you can review.
+>
+> See you Monday!
+> [Your name]
+
+---
+
+### 2. Build with Documentation
+
+**Principle:** Document as you build, not after
+
+---
+
+#### Code Documentation Best Practices
+
+**File Header:**
+```python
+"""
+Project: [Project Name]
+Script: [Filename]
+Purpose: [What does this script do?]
+Author: [Your name]
+Created: [Date]
+Last Modified: [Date]
+
+Inputs:
+- [Input file 1]: [Description]
+- [Input file 2]: [Description]
+
+Outputs:
+- [Output file 1]: [Description]
+
+Dependencies:
+- [Library 1]: [Version]
+- [Library 2]: [Version]
+
+Notes:
+- [Any important context or assumptions]
+"""
+```
+
+---
+
+**Section Comments:**
+```python
+### =================================================================
+### STEP 1: Load and validate data
+### =================================================================
+# Load raw data from source
+# Expected record count: ~50,000 records
+# Validate for nulls and date ranges
+
+[code block]
+
+### =================================================================
+### STEP 2: Apply business rules
+### =================================================================
+# Exclude records flagged as 'test' or 'void'
+# Filter to relevant date range (last 12 months)
+# Apply status filters per requirements doc
+
+[code block]
+
+### =================================================================
+### STEP 3: Calculate metrics
+### =================================================================
+# Calculate lien loss per metrics dictionary definition
+# Formula: MAX(0, Outstanding Balance - Sale Price)
+
+[code block]
+```
+
+---
+
+**Inline Comments:**
+```python
+# Good inline comment (explains WHY):
+# Using left join because some accounts don't have sales data
+# and we want to keep all accounts in the analysis
+result = accounts_df.merge(sales_df, on='account_id', how='left')
+
+# Bad inline comment (explains WHAT - code already shows this):
+# Merge dataframes
+result = accounts_df.merge(sales_df, on='account_id', how='left')
+```
+
+---
+
+**Complex Logic:**
+```python
+# For complex business rules, break down the logic:
+
+# Calculate lien loss with special handling:
+# 1. If sale price is null, exclude from calculation
+# 2. If outstanding balance < 0, treat as 0 (data error)
+# 3. If sale price > balance, lien loss = 0 (no loss)
+# 4. Otherwise, lien loss = balance - sale price
+
+def calculate_lien_loss(row):
+    """
+    Calculate lien loss with business rule handling.
+    
+    Parameters:
+    - row: DataFrame row with 'outstanding_balance' and 'sale_price'
+    
+    Returns:
+    - float: Calculated lien loss (0 or positive value)
+    """
+    # Handle null sale price
+    if pd.isna(row['sale_price']):
+        return None
+    
+    # Handle negative balance (data quality issue)
+    balance = max(0, row['outstanding_balance'])
+    
+    # Calculate lien loss
+    lien_loss = max(0, balance - row['sale_price'])
+    
+    return lien_loss
+
+# Apply to dataframe
+df['lien_loss'] = df.apply(calculate_lien_loss, axis=1)
+```
+
+---
+
+**README for Code Repository:**
+```markdown
+# [Project Name] - Code Documentation
+
+## Project Overview
+[Brief description of the project]
+
+## Folder Structure
+```
+/project_folder/
+├── /data/
+│   ├── /raw/              # Unmodified source data
+│   ├── /processed/        # Cleaned and transformed data
+│   └── /final/            # Analysis-ready datasets
+│
+├── /code/
+│   ├── 01_extract_data.py       # Pull from source systems
+│   ├── 02_clean_data.py         # Data cleaning and validation
+│   ├── 03_calculate_metrics.py  # Metric calculations
+│   ├── 04_create_visuals.py     # Generate charts
+│   └── utils.py                 # Shared functions
+│
+├── /outputs/
+│   ├── /reports/          # Final deliverables
+│   ├── /charts/           # Generated visualizations
+│   └── /tables/           # Summary tables
+│
+└── /documentation/
+    ├── project_charter.md
+    ├── metrics_dictionary.md
+    └── data_quality_log.md
+```
+
+## How to Run
+1. [Step 1: Set up environment]
+2. [Step 2: Configure data connections]
+3. [Step 3: Run scripts in order]
+
+Example:
+```bash
+python code/01_extract_data.py
+python code/02_clean_data.py
+python code/03_calculate_metrics.py
+python code/04_create_visuals.py
+```
+
+## Data Sources
+- **Source 1:** [Description, location, refresh frequency]
+- **Source 2:** [Description, location, refresh frequency]
+
+## Dependencies
+```
+pandas==1.5.0
+numpy==1.23.0
+matplotlib==3.6.0
+```
+
+Install with: `pip install -r requirements.txt`
+
+## Key Metrics
+See `metrics_dictionary.md` for detailed definitions.
+
+## Known Issues
+- [Issue 1 and how it's handled]
+- [Issue 2 and how it's handled]
+
+## Contact
+For questions: [Your name] - [Your email]
+
+Last Updated: [Date]
+```
+
+---
+
+### 3. Quality Assurance During Development
+
+**Build in QA checkpoints as you go:**
+
+#### After Data Extraction:
+- [ ] Record counts match expectations
+- [ ] No unexpected nulls in key fields
+- [ ] Date ranges are correct
+- [ ] Joins produce expected results
+
+#### After Metric Calculation:
+- [ ] Totals reconcile to known values
+- [ ] Metrics fall within expected ranges
+- [ ] Formulas match metrics dictionary
+- [ ] Edge cases handled correctly
+
+#### After Visualization:
+- [ ] Charts accurately represent data
+- [ ] Labels and titles are clear
+- [ ] Colors are accessible (colorblind-friendly)
+- [ ] Formatting is consistent
+
+#### Before Sharing with Stakeholder:
+- [ ] Double-check all numbers
+- [ ] Spellcheck all text
+- [ ] Verify data sources are cited
+- [ ] Test any interactive elements
+- [ ] Review against mockup/requirements
+
+---
+
+### 4. Managing Scope Changes
+
+**Reality:** Scope often shifts during development as stakeholders see preliminary results
+
+---
+
+#### When Stakeholder Requests Changes:
+
+**Assess the impact:**
+1. Is this a clarification or a new requirement?
+2. How much additional work is required?
+3. Does this affect the timeline?
+4. Is this critical to the analysis?
+
+**Decision Framework:**
+
+**Small change (<2 hours):**
+- Accept and incorporate
+- Note in your changelog
+
+**Medium change (2-8 hours):**
+- Discuss priority and timeline impact
+- Get agreement on pushing other items or extending deadline
+
+**Large change (>8 hours):**
+- Document as new requirement
+- Propose options:
+  - Add to Phase 2 (future iteration)
+  - Adjust scope to accommodate
+  - Extend timeline
+- Get stakeholder to prioritize: what's more important?
+
+**Out of scope:**
+- Respectfully refer back to project charter
+- Offer to do as a follow-up project
+- Document for future work
+
+---
+
+**Template response to scope change:**
+
+> Thanks for the feedback. Adding [new requirement] would require approximately [X hours] of additional work, which would push our delivery date from [original date] to [new date].
+>
+> A few options:
+> 1. Deliver the current scope on [original date], then add [new item] in a follow-up analysis
+> 2. Extend the timeline to [new date] to include [new item]
+> 3. Deprioritize [other item] to make room for [new item] and stay on schedule
+>
+> What would you prefer?
+
+---
+
+## Develop Phase Checkpoint
+
+**Before moving to Phase 4, you must have:**
+
+✅ Weekly check-ins completed (Weeks 2-3)  
+✅ Stakeholder has seen draft work  
+✅ Feedback incorporated  
+✅ Analysis is 90% complete  
+✅ Code is documented  
+✅ QA checks passed  
+
+**Red flag:** If stakeholder hasn't seen your work by Week 3, or you're building something they didn't request, STOP and realign.
+
+---
+
+# Phase 4: Deliver {#phase-4-deliver}
+
+**Duration:** Week 4-5
+
+**Goal:** Finalize and present analysis in a way that drives action
+
+**Key Outputs:** Final deliverable, presentation, action items
+
+**Rule:** Lead with the answer, make insights actionable
+
+---
+
+## Why Delivery Approach Matters
+
+**Common mistake:** Build a technically perfect analysis that no one uses
+
+**Reality:** The best analysis gets used, not the one that's perfect
+
+**Impact:** How you present findings often matters more than the analysis itself
+
+---
+
+## Deliver Activities
+
+### 1. Final Deliverable Polish
+
+**Professional standards checklist:**
+
+#### Content:
+- [ ] Lead with executive summary / key findings
+- [ ] Structure flows logically
+- [ ] Insights are clear and actionable
+- [ ] Data sources are cited
+- [ ] Assumptions and limitations noted
+
+#### Visual Design:
+- [ ] Consistent formatting throughout
+- [ ] Charts are easy to read
+- [ ] Colors are purposeful (not decorative)
+- [ ] Font sizes are readable
+- [ ] White space used effectively
+
+#### Accuracy:
+- [ ] All numbers double-checked
+- [ ] Calculations verified
+- [ ] Formulas match metrics dictionary
+- [ ] No typos or grammatical errors
+- [ ] Date ranges are correct
+
+#### Usability:
+- [ ] File is easy to navigate
+- [ ] Tabs/sections are labeled clearly
+- [ ] Instructions included if interactive
+- [ ] Can be viewed on different devices/systems
+
+---
+
+### 2. Storytelling Structure
+
+**Use the BLUF (Bottom Line Up Front) approach:**
+
+---
+
+#### PowerPoint Deck Structure:
+
+**Slide 1: Title**
+- Project name
+- Date
+- Your name
+
+**Slide 2: Executive Summary (BLUF)**
+- State the business question
+- State the answer in 1-2 sentences
+- Highlight top 3 key findings
+
+**Slides 3-5: Supporting Analysis**
+- One insight per slide
+- Lead with the finding, then show the data
+- Use clear, descriptive titles
+
+**Slide 6: Recommendations**
+- Specific, actionable next steps
+- Prioritized by impact/effort
+- Owner and timeline for each
+
+**Slide 7: Appendix (Optional)**
+- Methodology
+- Data sources
+- Additional detail
+- Limitations
+
+---
+
+#### Dashboard Structure:
+
+**Top Section: Key Metrics**
+- 3-5 most important numbers
+- Clear labels and context
+- Highlight if good/bad vs target
+
+**Middle Section: Visualizations**
+- 2-3 charts showing trends or comparisons
+- Interactive filters if relevant
+- Drill-down capabilities if needed
+
+**Bottom Section: Details**
+- Supporting data table
+- Detailed breakdowns
+- Export capability
+
+---
+
+### 3. Presentation Preparation
+
+**For verbal presentation (meeting format):**
+
+---
+
+#### Presentation Agenda (30-45 min):
+
+**1. Context (3 min)**
+- Remind audience of the business question
+- Recap project scope
+- Set expectations for the discussion
+
+**2. Key Findings (10 min)**
+- Walk through Executive Summary
+- Highlight top 3 insights
+- Keep it high-level
+
+**3. Supporting Detail (15 min)**
+- Deep dive into the data
+- Show key visualizations
+- Explain methodology if relevant
+
+**4. Recommendations (10 min)**
+- Proposed actions
+- Expected impact
+- Implementation considerations
+
+**5. Discussion & Next Steps (remaining time)**
+- Answer questions
+- Get feedback
+- Agree on action items
+
+---
+
+#### Presentation Tips:
+
+**DO:**
+- ✅ Start with the answer (don't make them wait)
+- ✅ Tell a story, not just show data
+- ✅ Speak to business impact, not technical details
+- ✅ Pause for questions throughout
+- ✅ End with clear next steps
+
+**DON'T:**
+- ❌ Read slides verbatim
+- ❌ Apologize for limitations (state them matter-of-factly)
+- ❌ Dive into technical details unless asked
+- ❌ Use jargon or acronyms without explaining
+- ❌ Go over time
+
+---
+
+#### Handling Questions:
+
+**If you know the answer:**
+> "Good question. [Direct answer]. [Supporting detail if needed]."
+
+**If you don't know:**
+> "That's a great question. I don't have that analysis here, but I can follow up with that by [timeframe]."
+
+**If it's out of scope:**
+> "That's an interesting angle. It's outside the scope of this analysis, but would be a good follow-up project."
+
+**If they challenge your methodology:**
+> "Let me walk through the approach. [Explain]. Does that address your concern?"
+
+**Take notes** on all questions and follow-ups
+
+---
+
+### 4. Gathering Feedback
+
+**After presenting, explicitly ask:**
+
+---
+
+#### Feedback Questions:
+
+> "Did this answer the business question?"
+
+> "Was this deliverable in the right format for you?"
+
+> "What would you change or add?"
+
+> "What will you do differently based on these findings?"
+
+> "Should we plan any follow-up analysis?"
+
+**Document feedback** for your lessons learned
+
+---
+
+### 5. Action Items and Follow-up
+
+**Before ending the presentation meeting:**
+
+---
+
+#### Define Next Steps:
+
+**Create an action items list:**
+
+| Action Item | Owner | Due Date | Status |
+|-------------|-------|----------|--------|
+| [Action 1] | [Name] | [Date] | Open |
+| [Action 2] | [Name] | [Date] | Open |
+
+**Send a follow-up email within 24 hours:**
+
+> Subject: [Project Name] - Action Items from Presentation
+>
+> Hi [Team],
+>
+> Thanks for the discussion today. Here's a summary of the key takeaways 
+> and next steps:
+>
+> **Key Findings:**
+> 1. [Finding 1]
+> 2. [Finding 2]
+> 3. [Finding 3]
+>
+> **Action Items:**
+> - [Action 1 - Owner - Due Date]
+> - [Action 2 - Owner - Due Date]
+> - [Action 3 - Owner - Due Date]
+>
+> **My Follow-ups:**
+> - [Question 1 I committed to researching]
+> - [Additional analysis requested]
+>
+> I've attached the final deliverable. Let me know if you need anything else.
+>
+> [Your name]
+
+---
+
+## Deliver Phase Checkpoint
+
+**Before moving to Phase 5, you must have:**
+
+✅ Final deliverable completed and polished  
+✅ Presentation delivered to stakeholder  
+✅ Feedback received  
+✅ Action items documented  
+✅ Follow-up commitments noted  
+
+**Success indicator:** Stakeholder says something like "This is exactly what I needed" or "This answered my question"
+
+---
+
+# Phase 5: Document {#phase-5-document}
+
+**Duration:** Week 5 (or immediately after delivery)
+
+**Goal:** Capture lessons learned and enable future reuse
+
+**Key Outputs:** Lessons learned, code documentation, runbook (if recurring)
+
+**Rule:** Document while it's fresh, not 3 months later
+
+---
+
+## Why Documentation Matters
+
+**Common mistake:** Finish project and immediately move on
+
+**Reality:** You'll forget critical details within weeks. Future you (or someone else) will need to understand what you did.
+
+**Impact:** Poor documentation leads to reinventing the wheel every time
+
+---
+
+## Document Activities
+
+### 1. Lessons Learned
+
+**Duration:** 60 minutes
+
+**Purpose:** Reflect on what worked and what didn't
+
+---
+
+#### Lessons Learned Template:
+
+```markdown
+# Lessons Learned - [Project Name]
+
+**Project:** [Project Name]
+**Analyst:** [Your Name]
+**Date Completed:** [Completion Date]
+**Duration:** [Actual time spent vs estimated]
+
+---
+
+## Project Summary
+
+**Business Question:**
+[One sentence: What did we analyze?]
+
+**Key Findings:**
+1. [Finding 1]
+2. [Finding 2]
+3. [Finding 3]
+
+**Impact:**
+[How is this analysis being used? What decisions did it inform?]
+
+---
+
+## What Went Well
+
+### 1. [Thing that worked]
+**Why it worked:**
+[Explanation]
+
+**Apply next time:**
+[How to repeat this success]
+
+### 2. [Thing that worked]
+...
+
+---
+
+## What Didn't Go Well
+
+### 1. [Thing that didn't work]
+**What happened:**
+[Description of the issue]
+
+**Root cause:**
+[Why did this happen?]
+
+**Impact:**
+[Time wasted, rework needed, etc.]
+
+**Prevention:**
+[What should we do differently next time?]
+
+### 2. [Thing that didn't work]
+...
+
+---
+
+## Time Analysis
+
+| Phase | Estimated Time | Actual Time | Variance | Notes |
+|-------|---------------|-------------|----------|-------|
+| Discover | X hours | Y hours | +/- Z hours | [Why?] |
+| Define | X hours | Y hours | +/- Z hours | [Why?] |
+| Develop | X hours | Y hours | +/- Z hours | [Why?] |
+| Deliver | X hours | Y hours | +/- Z hours | [Why?] |
+| Document | X hours | Y hours | +/- Z hours | [Why?] |
+| **Total** | **X hours** | **Y hours** | **+/- Z hours** | |
+
+**Biggest time sinks:**
+1. [Activity that took longest and why]
+2. [Activity that took longest and why]
+
+---
+
+## Recommendations for Next Project
+
+1. [Recommendation 1]
+2. [Recommendation 2]
+3. [Recommendation 3]
+
+---
+
+## Stakeholder Feedback
+
+**What stakeholder said:**
+"[Direct quote if available]"
+
+**How they rated the project:**
+- Meets requirements: [Yes/No/Partially]
+- On time: [Yes/No - if no, why?]
+- Actionable insights: [Yes/No]
+- Will use again: [Yes/No]
+
+---
+
+## Follow-up Items
+
+- [ ] [Follow-up analysis requested]
+- [ ] [Additional questions to explore]
+- [ ] [Process improvements to implement]
+
+---
+```
+
+---
+
+### 2. Code and Analysis Documentation
+
+**Finalize your code documentation:**
+
+---
+
+#### Final README Update:
+
+```markdown
+# [Project Name] - Final Documentation
+
+## Project Overview
+[2-3 paragraph description of what this project accomplished]
+
+## Business Question
+[Restate the business question]
+
+## Key Findings
+1. [Finding 1]
+2. [Finding 2]
+3. [Finding 3]
+
+## Methodology
+**Approach:**
+[High-level description of analytical approach]
+
+**Data Sources:**
+- [Source 1]: [Description, date range, record count]
+- [Source 2]: [Description, date range, record count]
+
+**Analysis Steps:**
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+
+## Results
+**Key Metrics:**
+- [Metric 1]: [Value and interpretation]
+- [Metric 2]: [Value and interpretation]
+
+**Deliverables:**
+- [Deliverable 1]: [Location and description]
+- [Deliverable 2]: [Location and description]
+
+## Code Structure
+```
+/code/
+├── 01_extract_data.sql       # SQL to pull from sources
+├── 02_clean_data.py          # Data cleaning and validation
+├── 03_calculate_metrics.py   # Metric calculations
+├── 04_visualize.py           # Create charts and tables
+└── utils.py                  # Shared functions
+```
+
+**To rerun analysis:**
+```bash
+# Step 1: Extract data
+python 01_extract_data.py
+
+# Step 2: Clean and prep
+python 02_clean_data.py
+
+# Step 3: Calculate metrics
+python 03_calculate_metrics.py
+
+# Step 4: Generate visualizations
+python 04_visualize.py
+```
+
+## Assumptions and Limitations
+**Assumptions:**
+- [Assumption 1]
+- [Assumption 2]
+
+**Limitations:**
+- [Limitation 1]
+- [Limitation 2]
+
+## Data Quality Issues
+[Reference to data quality log]
+
+## Future Enhancements
+[Ideas for improving or extending this analysis]
+
+## Contact
+For questions about this analysis:
+- Analyst: [Your name] - [Your email]
+- Sponsor: [Stakeholder name] - [Their email]
+
+## Project Timeline
+- Start Date: [Date]
+- End Date: [Date]
+- Total Duration: [X weeks]
+
+## Related Projects
+[Links to related or follow-up analyses]
+
+Last Updated: [Date]
+```
+
+---
+
+### 3. Runbook (For Recurring Analysis)
+
+**If this analysis will be repeated, create a runbook:**
+
+---
+
+#### Runbook Template:
+
+```markdown
+# [Project Name] - Runbook
+
+## Purpose
+This runbook documents how to reproduce the [Project Name] analysis on a recurring basis.
+
+## Frequency
+[Weekly / Monthly / Quarterly / Annual]
+
+## Timeline
+**Total time required:** [X hours]
+
+**Recommended schedule:**
+- Day 1: [Extract data]
+- Day 2: [Process and validate]
+- Day 3: [Generate deliverables]
+
+## Prerequisites
+
+**Access Required:**
+- [System 1]: [What level of access?]
+- [System 2]: [What level of access?]
+
+**Tools/Software:**
+- [Tool 1]: [Version]
+- [Tool 2]: [Version]
+
+**Knowledge:**
+- [Skill 1 needed]
+- [Skill 2 needed]
+
+---
+
+## Step-by-Step Instructions
+
+### Step 1: Data Extraction
+
+**When:** [Day/time to run]
+
+**How:**
+1. [Detailed instruction 1]
+2. [Detailed instruction 2]
+3. [Detailed instruction 3]
+
+**Code:**
+```bash
+[Command or script to run]
+```
+
+**Expected Output:**
+- [File or dataset created]
+- [Expected record count: ~X records]
+
+**Troubleshooting:**
+- If [problem], then [solution]
+- If [problem], then [solution]
+
+---
+
+### Step 2: Data Validation
+
+**When:** [After extraction completes]
+
+**How:**
+1. [Check 1: What to verify]
+2. [Check 2: What to verify]
+
+**Validation Checks:**
+```sql
+[Sample validation query]
+```
+
+**Expected Results:**
+- [What should you see?]
+
+**If validation fails:**
+- [What to do]
+- [Who to contact]
+
+---
+
+### Step 3: Metric Calculation
+
+**When:** [After validation passes]
+
+**How:**
+1. [Detailed instruction 1]
+2. [Detailed instruction 2]
+
+**Code:**
+```bash
+[Command or script to run]
+```
+
+**Expected Output:**
+- [Metrics calculated]
+- [Typical ranges for metrics]
+
+**Quality Checks:**
+- [Check 1]
+- [Check 2]
+
+---
+
+### Step 4: Generate Deliverables
+
+**When:** [After metrics calculated]
+
+**How:**
+1. [Instruction 1]
+2. [Instruction 2]
+
+**Templates:**
+- Location: [Where to find templates]
+- Updates: [What to update each period]
+
+**Final Deliverable:**
+- Format: [PowerPoint / Excel / Dashboard]
+- Save location: [Where to save]
+- Distribution: [Who receives it]
+
+---
+
+## Common Issues and Solutions
+
+### Issue 1: [Description]
+**Symptoms:** [How you'll know this is happening]
+**Cause:** [Why this happens]
+**Solution:** [How to fix]
+
+### Issue 2: [Description]
+...
+
+---
+
+## Quality Assurance Checklist
+
+Before distributing final deliverable:
+
+- [ ] [Check 1]
+- [ ] [Check 2]
+- [ ] [Check 3]
+
+---
+
+## Distribution
+
+**Who receives:**
+- [Person/Group 1]: [Format, Frequency]
+- [Person/Group 2]: [Format, Frequency]
+
+**How to distribute:**
+[Email / SharePoint / Dashboard / etc.]
+
+---
+
+## Change Log
+
+| Date | Change | Reason | Updated By |
+|------|--------|--------|------------|
+| [Date] | [What changed] | [Why] | [Name] |
+
+---
+
+## Contact
+
+**Primary Contact:**
+- Name: [Your name]
+- Email: [Your email]
+- Available: [When]
+
+**Backup Contact:**
+- Name: [Backup person]
+- Email: [Their email]
+
+**Stakeholder:**
+- Name: [Sponsor name]
+- Email: [Their email]
+
+---
+```
+
+---
+
+### 4. Knowledge Transfer
+
+**If someone else will maintain this analysis:**
+
+---
+
+#### Knowledge Transfer Checklist:
+
+**Schedule a handoff meeting (60-90 min):**
+
+**Meeting Agenda:**
+1. (15 min) Overview: Business context and purpose
+2. (20 min) Walkthrough: Step through the code and process
+3. (15 min) Demo: Show how to run and troubleshoot
+4. (10 min) Q&A: Answer questions
+5. (10 min) Next steps: Have them run it with your guidance
+
+**Materials to provide:**
+- [ ] All code with comments
+- [ ] README and runbook
+- [ ] Metrics dictionary
+- [ ] Data quality log
+- [ ] Lessons learned
+- [ ] Sample outputs
+- [ ] Contact list (data owners, stakeholders)
+
+**Have them:**
+- [ ] Run the analysis with you watching
+- [ ] Identify any unclear steps
+- [ ] Ask questions until confident
+- [ ] Add you to their contact list for questions
+
+**Follow-up:**
+- [ ] Be available for questions for 2-4 weeks
+- [ ] Check in after their first solo run
+- [ ] Update documentation based on their feedback
+
+---
+
+## Document Phase Checkpoint
+
+**Before closing the project, you must have:**
+
+✅ Lessons learned documented  
+✅ Code fully documented and commented  
+✅ README updated with final info  
+✅ Runbook created (if recurring)  
+✅ Knowledge transfer completed (if applicable)  
+✅ All project files organized and archived  
+
+---
+
+# Templates & Checklists {#templates}
+
+## Quick Reference: All Templates
+
+This section provides direct access to all templates mentioned throughout the framework.
+
+### Project Charter Template
+[See Phase 1: Discover, Section 3]
+
+### Metrics Dictionary Template
+[See Phase 2: Define, Section 1]
+
+### Deliverable Mockup Examples
+[See Phase 2: Define, Section 2]
+
+### Data Quality Issues Log
+[See Phase 2: Define, Section 3]
+
+### Weekly Check-in Agenda
+[See Phase 3: Develop, Section 1]
+
+### Code Documentation Templates
+[See Phase 3: Develop, Section 2]
+
+### Lessons Learned Template
+[See Phase 5: Document, Section 1]
+
+### Runbook Template
+[See Phase 5: Document, Section 3]
+
+---
+
+# Troubleshooting Guide {#troubleshooting}
+
+## Common Problems and Solutions
+
+### Problem: Unclear Requirements
+
+**Symptoms:**
+- Sponsor gives vague direction
+- Multiple interpretations of the ask
+- Scope keeps changing
+
+**Solution:**
+1. Draft a project charter with YOUR interpretation
+2. Send it to sponsor: "Is this what you meant?"
+3. Get written confirmation before proceeding
+4. Use mockup to make requirements concrete
+
+---
+
+### Problem: Data Quality Issues
+
+**Symptoms:**
+- Nulls where you don't expect them
+- Numbers don't match published reports
+- Duplicate records
+- Data is stale or incomplete
+
+**Solution:**
+1. Document all issues in data quality log
+2. Quantify the impact (% of records affected)
+3. Propose solutions:
+   - Workaround with existing data
+   - Request data fixes from source
+   - Adjust scope to work around limitations
+4. Communicate impact to stakeholder
+5. Don't proceed until you know how to handle it
+
+---
+
+### Problem: Scope Creep
+
+**Symptoms:**
+- Stakeholder keeps adding requirements
+- Timeline keeps extending
+- Analysis gets more complex
+
+**Solution:**
+1. Assess impact of each change request
+2. Present options:
+   - Add to Phase 2 (future iteration)
+   - Extend timeline
+   - Deprioritize something else
+3. Force trade-off decisions
+4. Update project charter with changes
+5. Get re-approval on new scope and timeline
+
+---
+
+### Problem: Running Out of Time
+
+**Symptoms:**
+- Week 3 and still building basic components
+- Timeline slipped but stakeholder still expects delivery
+- Trying to do too much
+
+**Solution:**
+1. Assess what's truly required vs nice-to-have
+2. Propose a phased delivery:
+   - Phase 1: Core analysis by original date
+   - Phase 2: Enhancements later
+3. Focus on answering the core business question
+4. Be transparent about what won't be included
+5. Deliver something useful, even if not complete
+
+---
+
+### Problem: Stakeholder Not Engaged
+
+**Symptoms:**
+- Sponsor doesn't respond to emails
+- Cancels or skips check-in meetings
+- Haven't seen your work by Week 3
+
+**Solution:**
+1. Escalate: "I need your input to proceed"
+2. Make it easy: Send specific questions, not open-ended requests
+3. Propose decisions: "I'm planning to do X unless you prefer Y"
+4. Set a deadline: "I'll proceed with approach A if I don't hear back by Friday"
+5. Document all attempts to engage
+
+---
+
+### Problem: Analysis Doesn't Match Expectations
+
+**Symptoms:**
+- Present final work and stakeholder says "This isn't what I wanted"
+- Wrong format or level of detail
+- Answered the wrong question
+
+**Solution (Prevention):**
+1. Always create a mockup and get approval
+2. Show work-in-progress weekly
+3. Confirm understanding at each checkpoint
+
+**Solution (Recovery):**
+1. Listen to what they actually need
+2. Assess how much rework is required
+3. Propose timeline for corrections
+4. Learn from this for next project
+
+---
+
+### Problem: Technical Roadblocks
+
+**Symptoms:**
+- Can't access needed data
+- Code isn't working
+- Tools or systems aren't available
+
+**Solution:**
+1. Identify the blocker quickly (don't spin for days)
+2. Escalate early to whoever can unblock
+3. Have a backup plan (alternative data source, different approach)
+4. Communicate impact to stakeholder immediately
+5. Document workarounds for future
+
+---
+
+### Problem: Conflicting Data Sources
+
+**Symptoms:**
+- Different systems show different numbers
+- Can't reconcile discrepancies
+- Don't know which source is "right"
+
+**Solution:**
+1. Document all sources and their values
+2. Investigate root cause of discrepancy
+3. Consult with data owners
+4. Choose one as source of truth (document why)
+5. Note limitations in your deliverable
+6. Don't try to make them match artificially
+
+---
+
+### Problem: Analysis Paralysis
+
+**Symptoms:**
+- Spending too much time perfecting
+- Re-running analysis multiple ways
+- Never satisfied with results
+
+**Solution:**
+1. Set a deadline for "good enough"
+2. Focus on answering the core business question
+3. Remember: done is better than perfect
+4. Get feedback on draft before polishing
+5. Ship it and iterate if needed
+
+---
+
+## When to Ask for Help
+
+**Ask early if:**
+- You're stuck on the same problem for >2 hours
+- Data quality issues are severe
+- Timeline is at serious risk
+- Requirements are fundamentally unclear
+- Stakeholder is unresponsive
+- Analysis is revealing something concerning
+
+**Don't wait until Week 4 to raise red flags.**
+
+---
+
+## Final Thoughts
+
+### The Framework Is a Guide, Not a Straitjacket
+
+- Adapt it to your organization's culture
+- Adjust timelines based on project complexity
+- Skip steps that don't add value for your situation
+- Add steps that are critical for your domain
+
+### The Goal Is Continuous Improvement
+
+- After each project, update this framework
+- Share lessons learned with your team
+- Build on what works, fix what doesn't
+
+### Remember Why You're Doing This
+
+> "The best analysis gets used, not the one that's perfect."
+
+The purpose of analytics is to drive better business decisions. If your analysis sits in a drawer, it doesn't matter how technically sophisticated it was.
+
+**Prioritize:**
+1. Answering the business question
+2. Stakeholder alignment
+3. Actionable insights
+4. Technical excellence
+
+In that order.
+
+---
+
+**Good luck with your next project!** 🚀
+
+---
+
+*Analytics Project Framework | Version 1.0 | For analytics professionals leading data projects*
